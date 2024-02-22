@@ -1,9 +1,10 @@
-import './App.css'
+import { Header } from './components/Header'
+import './App.sass'
 
 function App() {
   return (
     <>
-      <div>Inicio</div>
+      <Header>header</Header>
     </>
   )
 }
