@@ -1,10 +1,13 @@
 import './Header.sass'
+import { Godaddylogo } from '../../assets/Godaddylogo'
 
 export function Header() {
   return (
     <header className="header">
       <div className='header-left'>
-        <a>Go daddy logo</a>
+        <a>
+          <Godaddylogo />
+        </a>
         <nav>
           <button>menu</button>
           <ul>
@@ -15,7 +18,7 @@ export function Header() {
           </ul>
         </nav>
       </div>
-      <div className='header-rigth'>
+      <div className='header-right'>
         <a>Contact Us</a>
         <a>Help</a>
         <details>Sign In</details>
