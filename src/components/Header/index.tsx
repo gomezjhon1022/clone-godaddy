@@ -9,8 +9,10 @@ export function Header() {
           <Godaddylogo />
         </a>
         <nav>
-          <button>menu</button>
-          <ul>
+          <button className='header-menu'>
+            <span className='hamburger-menu'></span>
+          </button>
+          <ul className='header-links'>
             <li>Domains</li>
             <li>Websites and Hosting</li>
             <li>Email</li>
