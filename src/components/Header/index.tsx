@@ -35,7 +35,7 @@ export function Header() {
           <div className='details-list-container'>
             <div className='details-list-figure'></div>
             <div className='details-list'>
-              <div>
+              <div className='part-1'>
                 <div>
                   Registered Users
                 </div>
@@ -46,7 +46,7 @@ export function Header() {
                   <a>Sign In</a>
                 </div>
               </div>
-              <div>
+              <div className='part-2'>
                 <div>
                   New Customer
                 </div>
@@ -57,7 +57,7 @@ export function Header() {
                   <a>Create an Account</a>
                 </div>
               </div>
-              <div>
+              <div className='part-3'>
                 <p>INBOX LINKS</p>
                 <ul>
                   <li>
