@@ -82,19 +82,24 @@ header
       display: flex
       align-items: center
       justify-content: space-between
-      a,details
+      a
         font-size: 1.75rem
         font-weight: bold
         padding: 1rem 1.5rem
         cursor: pointer
         border-radius: 1rem
-      > a:hover,details:hover
+      > a:hover,.list-details:hover
         background-color: $color-gray-light
-      details[open]
+      .list-details[open]
         background-color: $white
         > summary
           color: $color-gray
-      details
+      .list-details
+        font-size: 1.75rem
+        font-weight: bold
+        padding: 1rem 1.5rem
+        cursor: pointer
+        border-radius: 1rem
         position: relative
         summary
           display: flex
@@ -129,18 +134,31 @@ header
   header
     justify-content: space-between
     .header-right
-      width: 14.5rem
+      width: 17.5rem
       justify-content: flex-end
       align-items: center
 
       .header-right-nav
         display: flex
-        justify-content: flex-start
+        align-items: center
         gap: 2rem
         > a
           display: inline-block
           height: 3rem
           width: 3rem
+          transform: translateX(-1rem)
+        .nav-details
+          font-size: 1.75rem
+          font-weight: bold
+          padding: 1rem 1.5rem
+          cursor: pointer
+          border-radius: 1rem
+          position: relative
+          > summary
+            width: 2.5rem
+            height: 2.5rem
+            list-style: none
+            transform: translateX(-1rem)
 
       .header-right-list
         display: none
