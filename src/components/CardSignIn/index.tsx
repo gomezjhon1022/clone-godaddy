@@ -1,8 +1,9 @@
 import './CardSignIn.sass'
 
-export function CardSignIn () {
+export function CardSignIn ({toggleDetails}) {
   return (
             <div className='details-list-container'>
+              <button className='details-button' onClick={toggleDetails}></button>
               <div className='details-list-figure'></div>
               <div className='details-list'>
                 <div className='part-1'>
