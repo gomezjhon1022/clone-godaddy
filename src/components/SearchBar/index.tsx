@@ -1,6 +1,6 @@
 import './SearchBar.sass'
 
-export default function SearchBar () {
+function SearchBar () {
   return (
     <section className='searchbar'>
       <div className='searchbar-input-container'>
@@ -23,3 +23,5 @@ export default function SearchBar () {
     </section>
   )
 }
+
+export { SearchBar }

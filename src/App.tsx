@@ -1,5 +1,6 @@
 import { Header } from './components/Header'
-import SearchBar from './components/SearchBar'
+import { SearchBar } from './components/SearchBar'
+import { Footer } from './components/Footer'
 import './App.sass'
 import './styles/main.sass'
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header></Header>
       <SearchBar></SearchBar>
+      <Footer></Footer>
     </>
   )
 }
