@@ -3,72 +3,72 @@ import './Footer.sass'
 function Footer () {
   return(
     <footer>
-      <section>
+      <section className='tittle'>
         <p>Prices exclude tax.ICANN fees included.</p>
       </section>
       <nav>
         <ul>
           <li>
-            <div>About GoDaddly</div>
+            <div className='title-list'>About GoDaddly</div>
             <ul>
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Contact Us</li>
-              <li>GoDaddy Blog</li>
-              <li>Investor Relations</li>
-              <li>Legal</li>
-              <li>Newsroom</li>
-              <li>Trust Center</li>
+              <li><a>About Us</a></li>
+              <li><a>Careers</a></li>
+              <li><a>Contact Us</a></li>
+              <li><a>GoDaddy Blog</a></li>
+              <li><a>Investor Relations</a></li>
+              <li><a>Legal</a></li>
+              <li><a>Newsroom</a></li>
+              <li><a>Trust Center</a></li>
             </ul>
           </li>
           <li>
-            <div>Support</div>
+            <div className='title-list'>Support</div>
             <ul>
-              <li>Product Support</li>
-              <li>Community</li>
-              <li>Report Abuse</li>
-              <li>Resources</li>
+              <li><a>Product Support</a></li>
+              <li><a>Community</a></li>
+              <li><a>Report Abuse</a></li>
+              <li><a>Resources</a></li>
             </ul>
           </li>
           <li>
-            <div>Resources</div>
+            <div className='title-list'>Resources</div>
             <ul>
-              <li>Webmail</li>
-              <li>WHOIS</li>
-              <li>ICANN Confirmation</li>
-              <li>Venture Forward: Microbusiness Data</li>
-              <li>Designers & Developers</li>
-              <li>Corporate Domains</li>
-              <li>Redeem Code</li>
-              <li>Product Catalog</li>
-              <li>Business Name Generator</li>
+              <li><a>Webmail</a></li>
+              <li><a>WHOIS</a></li>
+              <li><a>ICANN Confirmation</a></li>
+              <li><a>Venture Forward: Microbusiness Data</a></li>
+              <li><a>Designers & Developers</a></li>
+              <li><a>Corporate Domains</a></li>
+              <li><a>Redeem Code</a></li>
+              <li><a>Product Catalog</a></li>
+              <li><a>Business Name Generator</a></li>
             </ul>
           </li>
           <li>
-            <div>Partner Programs</div>
+            <div className='title-list'>Partner Programs</div>
             <ul>
-              <li>Affiliates</li>
-              <li>Reseller Programs</li>
-              <li>GoDaddy Pro</li>
+              <li><a>Affiliates</a></li>
+              <li><a>Reseller Programs</a></li>
+              <li><a>GoDaddy Pro</a></li>
             </ul>
           </li>
           <li>
-            <div>Account</div>
+            <div className='title-list'>Account</div>
             <ul>
-              <li>My Products</li>
-              <li>Renewals & Billing</li>
-              <li>Create Account</li>
+              <li><a>My Products</a></li>
+              <li><a>Renewals & Billing</a></li>
+              <li><a>Create Account</a></li>
             </ul>
           </li>
           <li>
-            <div>Shopping</div>
+            <div className='title-list'>Shopping</div>
             <ul>
-              <li>Buy a Domain</li>
-              <li>Websites</li>
-              <li>WordPress</li>
-              <li>Hosting</li>
-              <li>Web Security</li>
-              <li>Email & Office</li>
+              <li><a>Buy a Domain</a></li>
+              <li><a>Websites</a></li>
+              <li><a>WordPress</a></li>
+              <li><a>Hosting</a></li>
+              <li><a>Web Security</a></li>
+              <li><a>Email & Office</a></li>
             </ul>
           </li>
         </ul>
