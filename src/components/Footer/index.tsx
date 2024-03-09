@@ -1,3 +1,9 @@
+import { Godaddylogo } from '../../assets/Godaddylogo';
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+
 import './Footer.sass'
 
 function Footer () {
@@ -73,6 +79,58 @@ function Footer () {
           </li>
         </ul>
       </nav>
+      <section className='social-networks'>
+        <a>
+          <Godaddylogo />
+        </a>
+        <div className='footer-selectors'>
+          <div>
+            <button>United Kindom - English
+              <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="arrow-up">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+              </svg>
+            </button>
+          </div>
+          <div>
+            <button>
+            GBP £
+              <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="arrow-up">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div className='social-media'>
+          <ul>
+            <li>
+              <a>
+              <FaFacebook/>
+              </a>
+            </li>
+            <li>
+              <a>
+              <FaInstagram/>
+              </a>
+            </li>
+            <li>
+              <a>
+              <FaYoutube/>
+              </a>
+            </li>
+            <li>
+              <a>
+              <FaFacebook/>
+              </a>
+            </li>
+            <li>
+              <a>
+              <BsTwitterX/>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
     </footer>
   )
 }
