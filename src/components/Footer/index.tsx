@@ -124,8 +124,23 @@ function Footer () {
             </li>
           </ul>
         </div>
-
       </section>
+      <div className='footer-legal'>
+        <nav>
+          <ul>
+            <li>Legal</li>
+            <li>Privacy Policy</li>
+            <li>Cookies</li>
+          </ul>
+        </nav>
+        <div>Copyright © 1999 - 2024 GoDaddy Operating Company, LLC. All Rights Reserved.&nbsp;The GoDaddy word mark is a registered trademark of GoDaddy Operating Company, LLC in the US and other countries. The “GO” logo is a registered trademark of GoDaddy.com, LLC in the US.</div>
+        <div>
+          <span>
+          Use of this Site is subject to express terms of use. By using this site, you signify that you agree to be bound by these 
+          <a>Universal Terms of Service</a>
+          </span>
+        </div>
+      </div>
     </footer>
   )
 }
