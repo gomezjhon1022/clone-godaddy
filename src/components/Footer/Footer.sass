@@ -11,7 +11,7 @@ footer
     p
       padding-top: 0.15rem
       padding-bottom: 0.15rem
-  nav
+  > nav
     padding: 3.5rem 5.8rem
     border-top: 1px solid $color-gray-text
     > ul
@@ -73,3 +73,29 @@ footer
             svg
               cursor: pointer
               opacity: 0.7
+  .footer-legal
+    display: grid
+    gap:2rem
+    padding: 0.9rem 5.8rem 1.8rem 5.8rem
+    grid-template-areas: "copyright legal-menu" " terms ."
+    font-size: 1.6rem
+    line-height: 1.5
+
+    .copyright
+      grid-area: copyright
+
+    .legal-menu
+      grid-area: legal-menu
+      > ul
+        display: flex
+        justify-content: flex-end
+        li
+          margin: 0 0 1rem 2.5rem
+          cursor: pointer
+        li:hover
+          text-decoration: underline
+
+    .terms
+      grid-area: terms
+      a
+        cursor: pointer
