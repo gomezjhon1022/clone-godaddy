@@ -17,6 +17,7 @@ footer
     > ul
       display: flex
       justify-content: space-between
+      column-gap: 2rem
       flex-flow: wrap
       li
         .title-list
@@ -99,3 +100,47 @@ footer
       grid-area: terms
       a
         cursor: pointer
+
+@media (max-width: 1070px)
+  footer
+    .social-networks
+      flex-wrap: wrap
+      height: auto
+      justify-content: space-evenly
+      .social-networks-logo-godaddy
+        order: 2
+      .footer-selectors
+        order: 1
+        width: 100%
+        margin-bottom: 2rem
+        display: flex
+        justify-content: center
+        > div
+          > button
+            .footer-arrow-up
+              top: -0.3rem
+      .social-media
+        order: 3
+
+@media (max-width: 624px)
+  footer
+    .social-networks
+      .social-media
+        margin-top: 2rem
+        > ul
+          justify-content: space-between
+    .footer-legal
+      grid-template-areas: "legal-menu" "copyright" "terms"
+      .legal-menu
+        > ul
+          justify-content: flex-start
+@media (max-width: 530px)
+  footer
+    .social-networks
+      .footer-selectors
+        flex-wrap: wrap
+        > div
+            width: 100%
+            justify-content: center
+            margin: 0 0 2rem 0
+            padding: 0

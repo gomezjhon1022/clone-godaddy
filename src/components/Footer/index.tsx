@@ -80,7 +80,7 @@ function Footer () {
         </ul>
       </nav>
       <section className='social-networks'>
-        <a>
+        <a className='social-networks-logo-godaddy'>
           <Godaddylogo />
         </a>
         <div className='footer-selectors'>
