@@ -6,12 +6,12 @@ export function Content () {
       <section className='marquee'>
         <div>
           <div className='primary-panel'>
-            <div className='prymary-headline'>
+            <div className='primary-headline'>
               <h2 className='textHeading'>Websites + Marketing</h2>
-              <h3 className='description'>
+              <h3 className='subtitle'>
                 <span>Create your website.</span>
               </h3>
-              <p>Let our GoDaddy Guides build your starter website for FREE. Give us a call on 020 7023 9020.</p>
+              <p className='description'>Let our GoDaddy Guides build your starter website for FREE. Give us a call on 020 7023 9020.</p>
               <div>
                 <div>
                   <a>

@@ -1,7 +1,61 @@
-.main 
+.main
   width: 100%
-  height: 100vh
-  background-color: pink
   .marquee
     padding: 0 4rem
-    height: 100px
+    > div
+      // height: 60vh
+      display: grid
+      grid-template-columns: auto 25%
+      grid-template-rows: 1fr
+      column-gap: 2rem
+      .primary-panel
+        display: grid
+        background-image: url("https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape")
+        background-repeat: no repeat
+        background-size: cover
+        min-height: 64vw
+        border-radius: 30px
+        .primary-headline
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          .textHeading
+            margin-bottom: 2rem
+          .subtitle
+            margin-bottom: 2rem
+            font-size: 6rem
+            font-weight: bold
+          .description
+            margin-bottom: 2rem
+            font-size: 2rem
+            font-weight: 500
+            line-height: 1.8
+
+@media (min-width: 992px)
+  .main
+    .marquee
+      > div
+        .primary-panel
+          min-height: 35vw
+          grid-template-coumns: 54% auto
+          .primary-headline
+            padding: 2.5vw
+
+@media (min-width: 1024px)
+    .main
+      .marquee
+        > div
+          .primary-panel
+            background-position: center
+            grid-template-columns: 48% auto
+            .primary-headline
+              padding: 2.5vw
+
+  
+@media (min-width: 1720px)
+  .main
+    .marquee
+      > div
+        .primary-panel
+          min-height: 31vw
+
