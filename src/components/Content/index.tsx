@@ -12,14 +12,14 @@ export function Content () {
                 <span>Create your website.</span>
               </h3>
               <p className='description'>Let our GoDaddy Guides build your starter website for FREE. Give us a call on 020 7023 9020.</p>
-              <div>
+              <div className='button-start'>
                 <div>
                   <a>
                     <span>Start for Free</span>
                   </a>
                 </div>
               </div>
-              <p>No charge, no obligation, nothing to cancel.**</p>
+              <p className='tag'>No charge, no obligation, nothing to cancel.**</p>
             </div>
           </div>
           <div className='secondary-panel'>
@@ -35,14 +35,14 @@ export function Content () {
                   3-year purchase required. Additional year(s) &#x202A;£12.99&#x202C;
                 </span>
               </div>
-              <div>
+              <div className='button-find-domain'>
                 <div>
                   <a>
                     <span>Find Your Domain</span>
                   </a>
                 </div>
               </div>
-              <div>
+              <div className='include'>
                 <span>
                   Domains include free privacy protection forever
                   <sup>+</sup>
