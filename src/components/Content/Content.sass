@@ -5,7 +5,6 @@
   .marquee
     padding: 0 4rem
     > div
-      // height: 60vh
       display: grid
       grid-template-columns: auto 25%
       grid-template-rows: 1fr
@@ -57,7 +56,6 @@
         background-color: #d8efef
         padding: 3rem
         display: grid
-        position relative
         border-radius: 3rem
         .secondary-headline
           display: flex
@@ -91,6 +89,7 @@
             > div
               background-color: $black
               width: 75%
+              min-width: 19rem
               height: 6rem
               border-radius:1rem
               color:$white
@@ -107,16 +106,19 @@
   .main
     .marquee
       > div
+        .primary-panel
+          background-position: left center
+          background-image: url("https://img1.wsimg.com/cdnassets/transform/76672651-e89d-4ea4-8568-70026f028377/row-mrq-hp-tablet")
         .secondary-panel
-          grid-template-columns: 70vw auto
+          grid-template-columns: 1fr
 
 @media (min-width: 992px)
   .main
     .marquee
       > div
+        grid-template-coumns: 54% auto
         .primary-panel
           min-height: 35vw
-          grid-template-coumns: 54% auto
           .primary-headline
             padding: 2.5vw
         .secondary-panel
