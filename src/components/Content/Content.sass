@@ -6,14 +6,16 @@
     padding: 0 4rem
     > div
       display: grid
-      grid-template-columns: auto 25%
-      grid-template-rows: 1fr
-      column-gap: 2rem
+      grid-template-rows: 1fr auto auto
+      grid-template-columns: 100%
+      row-gap: 2rem
       .primary-panel
         display: grid
-        background-image: url("https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape")
+        background-image: url("https://img1.wsimg.com/cdnassets/transform/4c5fe153-b3a2-416e-b772-cfd315360e36/row-mrq-hp-portrait")
         background-repeat: no repeat
+        background-position: center bottom
         background-size: cover
+        grid-auto-rows: 0.5fr
         min-height: 64vw
         border-radius: 3rem
         .primary-headline
