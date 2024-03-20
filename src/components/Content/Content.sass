@@ -16,9 +16,11 @@
         background-position: center bottom
         background-size: cover
         grid-auto-rows: 0.5fr
-        // min-height: 64vw
-        height: 100vh
+        min-height: 64vw
         border-radius: 3rem
+        .primary-panel-hidden
+          grid-row: 2
+          min-height: 65vmin
         .primary-headline
           display: flex
           flex-direction: column
@@ -119,8 +121,24 @@
     .marquee
       > div
         .primary-panel
-          background-position: left center
           background-image: url("https://img1.wsimg.com/cdnassets/transform/76672651-e89d-4ea4-8568-70026f028377/row-mrq-hp-tablet")
+          background-position: left center
+          grid-template-columns: 45% auto
+          grid-template-rows: auto auto
+          .primary-headline
+            padding: 4rem
+            align-items: start
+            .textHeading, .subtitle, .description
+              text-align: start
+              line-height: 1.5
+            .button-start
+              justify-content: start
+              > div
+                width: 95%
+            .tag
+              font-weight: 400
+          .primary-panel-hidden
+            display: none
         .secondary-panel
           grid-template-columns: 1fr
 

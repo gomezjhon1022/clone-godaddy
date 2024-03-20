@@ -21,6 +21,9 @@ export function Content () {
               </div>
               <p className='tag'>No charge, no obligation, nothing to cancel.**</p>
             </div>
+            <div className='primary-panel-hidden'>
+
+            </div>
           </div>
           <div className='secondary-panel'>
             <div className='secondary-headline'>
