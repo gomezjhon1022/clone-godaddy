@@ -146,11 +146,15 @@
   .main
     .marquee
       > div
-        grid-template-coumns: 54% auto
+        grid-template-columns: auto 25%
+        grid-template-rows: 1fr
+        column-gap: 3rem
         .primary-panel
+          grid-template-columns: 54% auto
           min-height: 35vw
           .primary-headline
             padding: 2.5vw
+            height: auto
         .secondary-panel
           place-items: center
           grid-template-columns: 1fr
@@ -159,6 +163,8 @@
       .marquee
         > div
           .primary-panel
+          // background-image: url("https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape")
+
             background-position: center
             grid-template-columns: 48% auto
             .primary-headline
