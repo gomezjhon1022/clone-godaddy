@@ -3,7 +3,7 @@
 .main
   width: 100%
   .marquee
-    padding: 0 4rem
+    padding: 0 2rem
     > div
       display: grid
       grid-template-rows: 1fr auto auto
@@ -67,27 +67,30 @@
             font-size: 1.5rem
             font-weight: 500
       .secondary-panel
+        position: relative
         background-color: #d8efef
-        padding: 3rem
+        padding: 2rem
         display: grid
+        grid-template-columns: 75vw auto
+        align-items: center
         border-radius: 3rem
         .secondary-headline
           display: flex
           flex-direction: column
-          align-items: center
           justify-content: space-between
           width: 100%
-          text-align: center
           > h2
             margin-bottom: 2rem
             font-size: 1.8rem
           > h3
-            font-size: 4rem
+            font-size: 2.5rem
             margin-bottom: 2rem
+            max-width: 80%
             > span
               display: inline-block
               width: 92%
           .description
+            display: none
             margin-bottom: 2rem
             font-size: 2rem
             font-weight: 500
@@ -96,9 +99,9 @@
               display: inline-block
               max-width: 70%
           .button-find-domain
+            display: none
             width: 100%
             margin-bottom: 2rem
-            display: flex
             justify-content: center
             > div
               background-color: $black
@@ -116,6 +119,23 @@
             margin-bottom: 2rem
             font-size: 1.5rem
             font-weight: 500
+        .link-button
+          display:block
+          margin: auto
+          height: 6rem
+          width: 6rem
+          > div
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            > a
+              display: inline-flex
+              width: 4rem
+              height: 6rem
+
+
 @media (min-width: 768px)
   .main
     .marquee
@@ -163,8 +183,7 @@
       .marquee
         > div
           .primary-panel
-          // background-image: url("https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape")
-
+            // background-image: url("https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape")
             background-position: center
             grid-template-columns: 48% auto
             .primary-headline
