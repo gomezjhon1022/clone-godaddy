@@ -97,7 +97,7 @@
             line-height: 1.58
             > span
               display: inline-block
-              max-width: 70%
+              width: 100%
           .button-find-domain
             display: none
             width: 60%
@@ -155,6 +155,7 @@
               justify-content: start
               > div
                 width: 95%
+                max-width: 25rem
             .tag
               font-weight: 400
           .primary-panel-hidden
@@ -183,25 +184,45 @@
           .primary-headline
             padding: 2.5vw
             height: auto
+            .description
+              width: 90%
         .secondary-panel
           place-items: center
           grid-template-columns: 1fr
+          .secondary-headline
+            text-align: center
+            .description
+              display: block
+              width: 90%
+            > h3
+              max-width: 100%
+              > span
+                width: 100%
+            .button-find-domain
+              width: 100%
+              display: flex
+
 @media (min-width: 1024px)
     .main
       .marquee
         > div
           .primary-panel
-            // background-image: url("https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape")
             background-position: center
             grid-template-columns: 48% auto
             .primary-headline
               padding: 2.5vw
+              .subtitle
+                font-size: 5.5rem
+                line-height: 1.2
+          .secondary-panel
+            padding: 3rem
 
-  
+
 @media (min-width: 1720px)
   .main
     .marquee
       > div
         .primary-panel
           min-height: 31vw
+
 
