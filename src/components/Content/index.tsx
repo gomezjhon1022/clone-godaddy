@@ -107,7 +107,7 @@ export function Content () {
                 Website Design Services
               </span>
             </a>
-            <a>
+            <a className='last'>
               <img/>
               <div>
                 <span>
