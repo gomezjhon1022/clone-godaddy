@@ -119,36 +119,37 @@ export function Content () {
             </a>
           </div>
         </section>
-        <section className='headline-wrapper'>
-          <div className='headline'>
-            <h2>
-              <span>
-              What's first up for your business?
-              </span>
-            </h2>
-          </div>
-          <div className='button-container'>
-            <div>
-              <ul>
-                <li>
-                  <button>
-                    Domains
-                  </button>
-                </li>
-                <li>
-                  <button>
-                    Recommended
-                  </button>
-                </li>
-                <li>
-                  <button>
-                    WordPress and Security
-                  </button>
-                </li>
-              </ul>
+        <section className='recore-interactive-section'>
+          <div className='headline-wrapper'>
+            <div className='headline'>
+              <h2>
+                <span>
+                What's first up for your business?
+                </span>
+              </h2>
+            </div>
+            <div className='filter-nav'>
+              <div>
+                <ul>
+                  <li>
+                    <button>
+                      Domains
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      Recommended
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      WordPress and Security
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-
         </section>
       </section>
     </main>
