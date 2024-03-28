@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import './Content.sass'
 
 export function Content () {
+  const [interest, setInterest] = useState('Domains')
+  const optionsInterest = [ 'Domains', 'Recommended','WordPress and Security' ]
+  const handleSelection = (option:string) => {
+    setInterest(option)
+  }
   return (
     <main className="main">
       <section className='marquee'>
@@ -131,21 +137,14 @@ export function Content () {
             <div className='filter-nav'>
               <div>
                 <ul>
-                  <li>
-                    <button>
-                      Domains
-                    </button>
-                  </li>
-                  <li>
-                    <button>
-                      Recommended
-                    </button>
-                  </li>
-                  <li>
-                    <button>
-                      WordPress and Security
-                    </button>
-                  </li>
+                  {optionsInterest.map(option=> (
+                    <li key={option}>
+                      <button className={`${interest===option?'button-selected':''}`} onClick={()=>handleSelection(option)}>
+                        {option}
+                      </button>
+                    </li>
+                  )
+                  )}
                 </ul>
               </div>
             </div>
