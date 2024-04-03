@@ -215,7 +215,7 @@
         grid-template-rows: 55% 45%
         grid-gap:1rem
         grid-template-areas:'item1 item1''item2 item3'
-        min-height: 39rem
+        min-height: 49rem
         max-width: 136rem
         margin: auto
         padding: 1rem 2rem 4rem 2rem
@@ -236,6 +236,7 @@
               background-size: cover
               background-position: center
               background-color: #e4f1ef
+              border-radius: 10px
               padding: 2rem
               color:#111
               // grid-template-columns: 1fr
@@ -246,6 +247,7 @@
                 text-align: start
                 position: relative
                 justify-content: flex-end
+                padding-right: 0.5rem
                 > h3
                   padding-bottom: 3.5rem
                   font-size: 2.8rem
@@ -258,17 +260,96 @@
                 height: 3rem
                 width: 3rem
                 top: unset
-                bottom: 1rem
-                left: 1rem
+                bottom: 2rem
+                left: 2rem
+              &:hover
+                box-shadow: rgba(0,0,0,0.15) 0rem 0.625rem 3.125rem, rgba(0,0,0,0.05) 0rem 0.625rem 1.25rem
         > div:nth-child(2)
           grid-area: item2
-          .lazy-bg-2
-            background-color: yellow
+          > div
+            height: 100%
+            width: 100%
+            .lazy-bg-2
+              background-color: rgb(232,234,235)
+              border-radius: 10px
+              padding: 2rem
+              position: relative
+              display: grid
+              grid-template-columns: 1fr
+              background-repeat: no-repeat
+              background-size: cover
+              background-position: center
+              height: 100%
+              width: 100%
+              > div
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                text-align: start
+                justify-content: flex-end
+                position: relative
+                padding-right: 0.5rem
+                > h3
+                  > span
+                    position: relative
+                    display: inline-block
+                    font-size: 2.1rem
+                    font-weight: 600
+                > p
+                  display: none
+                > div
+                  display: none
+              .arrow
+                position: absolute
+                top: 2rem
+                right: 2rem
+                height: 3rem
+                width: 3rem
+              &:hover
+                box-shadow: rgba(0,0,0,0.15) 0rem 0.625rem 3.125rem, rgba(0,0,0,0.05) 0rem 0.625rem 1.25rem
+
         > div:nth-child(3)
           grid-area: item3
-          .lazy-bg-3
-            background-color: blue
-
+          > div
+            height: 100%
+            width: 100%
+            .lazy-bg-3
+              background-color: rgb(232,234,235)
+              border-radius: 10px
+              padding: 2rem
+              position: relative
+              display: grid
+              grid-template-columns: 1fr
+              background-repeat: no-repeat
+              background-size: cover
+              background-position: center
+              height: 100%
+              width: 100%
+              > div
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                text-align: start
+                justify-content: flex-end
+                position: relative
+                > h3
+                  > span
+                    position: relative
+                    display: inline-block
+                    font-size: 2.1rem
+                    font-weight: 600
+                > p
+                  display: none
+                > div
+                  display: none
+              .arrow
+                position: absolute
+                top: 2rem
+                right: 2rem
+                height: 3rem
+                width: 3rem
+              &:hover
+                box-shadow: rgba(0,0,0,0.15) 0rem 0.625rem 3.125rem, rgba(0,0,0,0.05) 0rem 0.625rem 1.25rem
 @media (min-width: 768px)
   .main
     .marquee
