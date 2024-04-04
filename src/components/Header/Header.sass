@@ -18,6 +18,8 @@ header
       .nav-logo
         height: 4rem
         cursor: pointer
+      .mobile
+        display: block
     nav
       width: 75%
       .header-menu
@@ -202,3 +204,11 @@ header
             bottom: 0
             background-color: rgba(255, 255, 255 , 0.8 )
             z-index: 9
+
+@media (max-width: 767px)
+
+  header
+    .header-left
+      a
+        .mobile
+          display: none
