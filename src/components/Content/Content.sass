@@ -350,6 +350,30 @@
                 width: 3rem
               &:hover
                 box-shadow: rgba(0,0,0,0.15) 0rem 0.625rem 3.125rem, rgba(0,0,0,0.05) 0rem 0.625rem 1.25rem
+
+
+@media (min-width: 520px)
+  .main
+    .main-content
+      .recore-interactive-section
+        .card-grid
+          padding: 1rem calc( 10vw + 48px  ) 4rem calc( 10vw + 48px  )
+          min-height: 62rem
+          grid-template-rows: 60% 40%
+@media (min-width: 1025px)
+  .main
+    .main-content
+      .recore-interactive-section
+        .card-grid
+          background-color: green
+          min-height: 74rem
+          padding: 1rem 5rem 4rem 5rem
+          grid-template-columns: 1fr 1fr
+          grid-template-rows: 1fr 1fr
+          grid-template-areas: 'item1 item2' 'item1 item3'
+          gap: 2rem
+
+
 @media (min-width: 768px)
   .main
     .marquee
