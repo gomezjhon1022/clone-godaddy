@@ -365,14 +365,47 @@
     .main-content
       .recore-interactive-section
         .card-grid
-          background-color: green
           min-height: 74rem
           padding: 1rem 5rem 4rem 5rem
           grid-template-columns: 1fr 1fr
           grid-template-rows: 1fr 1fr
           grid-template-areas: 'item1 item2' 'item1 item3'
           gap: 2rem
-
+          > div:first-child
+            > div
+              .lazy-bg
+                grid-template-columns: 70% 30%
+                padding: 3rem
+                background-image: url('https://img1.wsimg.com/cdnassets/transform/ec1ec404-8337-4417-9c0a-a4bf5eeace3a/intl-img-hp-recore-domains-large-landscape')
+                > div
+                  > h3
+                    font-size: 3.3rem
+                    padding-bottom: unset
+                    margin-bottom: 0.5rem
+                  > p
+                    display: block
+                    font-size: 1.9rem
+                    line-height: 1.5
+                    margin-bottom: 2rem
+                    margin-right: 2rem
+                  > div
+                    display: block
+                    width: 100%
+                    > div
+                      > a
+                        display: inline-flex
+                        justify-content: center
+                        align-items: center
+                        background-color: $black
+                        color: $white
+                        border-radius: 4px
+                        font-size: 1.9rem
+                        font-weight: bold
+                        padding: 1.6rem 2rem
+                        width: auto
+                        border: 2px solid transparent
+                .arrow
+                  display: none
 
 @media (min-width: 768px)
   .main
