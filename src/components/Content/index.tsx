@@ -150,155 +150,91 @@ export function Content () {
             </div>
           </div>
           <div className='card-grid'>
-            <div className='recore-card-item'>
-              <div>
-                <div className='lazy-bg'>
+            {(interest==='Domains') &&
+              <>
+                <div className='recore-card-item'>
                   <div>
-                    <h3>
-                      <span>Domains</span>
-                    </h3>
-                    <p>Get started with the perfect domain, which comes with free domain privacy protection forever.</p>
-                    <div>
+                    <div className='lazy-bg'>
                       <div>
-                        <a>
-                          <span>Search Domains</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='arrow'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='recore-card-item'>
-              <div>
-                <div className='lazy-bg-2'>
-                  <div>
-                    <h3>
-                      <span>.co for &#x202A;£9.99&#x202C;/1st year</span>
-                    </h3>
-                    <p>Ensure your company and website stand out with a .co domain.</p>
-                    <div>
-                      <div>
-                        <a>
-                          <span>Find Your Domain</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='arrow'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='recore-card-item'>
-              <div>
-                <div className='lazy-bg-3'>
-                  <div>
-                    <h3>
-                      <span>.co.uk &#x202A;£0.01&#x202C;/1st yr</span>
-                    </h3>
-                    <p>Boost your local impact with our localized top-level domains.</p>
-                    <div>
-                      <div>
-                        <a>
-                          <span>Get Started</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='arrow'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {false?
-            <>
-              <div className='recore-card-item'>
-                <div>
-                  <div className='lazy-bg'>
-                    <div>
-                      <h3>
-                        <span>Domains</span>
-                      </h3>
-                      <p>Get started with the perfect domain, which comes with free domain privacy protection forever.</p>
-                      <div>
+                        <h3>
+                          <span>Domains</span>
+                        </h3>
+                        <p>Get started with the perfect domain, which comes with free domain privacy protection forever.</p>
                         <div>
-                          <a>
-                            <span>Search Domains</span>
-                          </a>
+                          <div>
+                            <a>
+                              <span>Search Domains</span>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className='arrow'>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className='recore-card-item'>
-                <div>
-                  <div className='lazy-bg-2'>
-                    <div>
-                      <h3>
-                        <span>.co for &#x202A;£9.99&#x202C;/1st year</span>
-                      </h3>
-                      <p>Ensure your company and website stand out with a .co domain.</p>
-                      <div>
-                        <div>
-                          <a>
-                            <span>Find Your Domain</span>
-                          </a>
-                        </div>
+                      <div className='arrow'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
                       </div>
                     </div>
-                    <div className='arrow'>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                      </svg>
-                    </div>
                   </div>
                 </div>
-              </div>
-              <div className='recore-card-item'>
-                <div>
-                  <div className='lazy-bg-3'>
-                    <div>
-                      <h3>
-                        <span>.co.uk &#x202A;£0.01&#x202C;/1st yr</span>
-                      </h3>
-                      <p>Boost your local impact with our localized top-level domains.</p>
+                <div className='recore-card-item'>
+                  <div>
+                    <div className='lazy-bg-2'>
                       <div>
+                        <h3>
+                          <span>.co for &#x202A;£9.99&#x202C;/1st year</span>
+                        </h3>
+                        <p>Ensure your company and website stand out with a .co domain.</p>
                         <div>
-                          <a>
-                            <span>Get Started</span>
-                          </a>
+                          <div>
+                            <a>
+                              <span>Find Your Domain</span>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className='arrow'>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                      </svg>
+                      <div className='arrow'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </>
-            :
-            null
+                <div className='recore-card-item'>
+                  <div>
+                    <div className='lazy-bg-3'>
+                      <div>
+                        <h3>
+                          <span>.co.uk &#x202A;£0.01&#x202C;/1st yr</span>
+                        </h3>
+                        <p>Boost your local impact with our localized top-level domains.</p>
+                        <div>
+                          <div>
+                            <a>
+                              <span>Get Started</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='arrow'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            }
+            { (interest==='Recommended') &&
+              <>
+                <div>Prueba para recommended</div>
+              </>
+            }
+            { (interest==='WordPress and Security') &&
+              <>
+                <div>Prueba para WordPress</div>
+              </>
             }
           </div>
         </section>
