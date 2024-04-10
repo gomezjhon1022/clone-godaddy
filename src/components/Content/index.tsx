@@ -228,7 +228,80 @@ export function Content () {
             }
             { (interest==='Recommended') &&
               <>
-                <div>Prueba para recommended</div>
+                <div className='recore-card-item'>
+                  <div>
+                    <div className='lazy-bg'>
+                      <div>
+                        <h3>
+                          <span>
+                            Professional Email £1.99 per user/mo
+                          </span>
+                        </h3>
+                        <p>Earn trust from your customers with an email address that matches your domain.</p>
+                        <div>
+                          <div>
+                            <a>
+                              <span>Get Started</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='arrow'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='recore-card-item'>
+                  <div>
+                    <div className='lazy-bg-2'>
+                      <div>
+                        <h3>
+                          <span>Websites £6.99 /mo</span>
+                        </h3>
+                        <p>Start for free and quickly design a beautiful, mobile-friendly site.</p>
+                        <div>
+                          <div>
+                            <a>
+                              <span>Create Your Site</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='arrow'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='recore-card-item'>
+                  <div>
+                    <div className='lazy-bg-3'>
+                      <div>
+                        <h3>
+                          <span>Web Hosting £3.99/mo</span>
+                        </h3>
+                        <p>Get fast load times and 99.9% uptime guaranteed.***</p>
+                        <div>
+                          <div>
+                            <a>
+                              <span>View Plans and Pricing</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='arrow'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </>
             }
             { (interest==='WordPress and Security') &&
