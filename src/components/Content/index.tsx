@@ -154,7 +154,7 @@ export function Content () {
               <>
                 <div className='recore-card-item'>
                   <div>
-                    <div className='lazy-bg'>
+                    <div className='lazy-bg lazy-bg--domain'>
                       <div>
                         <h3>
                           <span>Domains</span>
@@ -178,7 +178,7 @@ export function Content () {
                 </div>
                 <div className='recore-card-item'>
                   <div>
-                    <div className='lazy-bg-2'>
+                    <div className='lazy-bg-2 lazy-bg--domain'>
                       <div>
                         <h3>
                           <span>.co for &#x202A;£9.99&#x202C;/1st year</span>
@@ -202,7 +202,7 @@ export function Content () {
                 </div>
                 <div className='recore-card-item'>
                   <div>
-                    <div className='lazy-bg-3'>
+                    <div className='lazy-bg-3 lazy-bg--domain'>
                       <div>
                         <h3>
                           <span>.co.uk &#x202A;£0.01&#x202C;/1st yr</span>
@@ -230,7 +230,7 @@ export function Content () {
               <>
                 <div className='recore-card-item'>
                   <div>
-                    <div className='lazy-bg'>
+                    <div className='lazy-bg lazy-bg--recommended'>
                       <div>
                         <h3>
                           <span>
@@ -256,7 +256,7 @@ export function Content () {
                 </div>
                 <div className='recore-card-item'>
                   <div>
-                    <div className='lazy-bg-2'>
+                    <div className='lazy-bg-2 lazy-bg--recommended'>
                       <div>
                         <h3>
                           <span>Websites £6.99 /mo</span>
@@ -280,7 +280,7 @@ export function Content () {
                 </div>
                 <div className='recore-card-item'>
                   <div>
-                    <div className='lazy-bg-3'>
+                    <div className='lazy-bg-3 lazy-bg--recommended'>
                       <div>
                         <h3>
                           <span>Web Hosting £3.99/mo</span>
