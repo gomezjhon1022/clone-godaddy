@@ -354,7 +354,105 @@
                 width: 3rem
               &:hover
                 box-shadow: rgba(0,0,0,0.15) 0rem 0.625rem 3.125rem, rgba(0,0,0,0.05) 0rem 0.625rem 1.25rem
-
+      .card-grid-recommended
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr
+        grid-gap:1rem
+        grid-template-areas:'item1''item2'
+        min-height: 55.5rem
+        max-width: 136rem
+        margin: auto
+        padding: 1rem 2rem 4rem 2rem
+        cursor: pointer
+        > div:first-child
+          grid-area: item1
+          > div
+            height: 100%
+            width: 100%
+            .lazy-bg
+              background-image: url('https://img1.wsimg.com/cdnassets/transform/dd931e32-181a-4609-9690-d036fed80802/intl-img-hp-recore-wp-large-portrait')
+              background-image: url('https://img1.wsimg.com/cdnassets/transform/dd931e32-181a-4609-9690-d036fed80802/intl-img-hp-recore-wp-large-portrait')
+              display: grid
+              grid-template-columns: 55% 45%
+              height: 100%
+              width: 100%
+              position: relative
+              background-repeat: no-repeat
+              background-size: cover
+              background-position: center
+              background-color: #e4f1ef
+              border-radius: 10px
+              padding: 2rem
+              color:#111
+              > div
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                text-align: start
+                position: relative
+                justify-content: flex-end
+                padding-right: 0.5rem
+                > h3
+                  padding-bottom: 3.5rem
+                  font-size: 2.8rem
+                > p
+                  display: none
+                > div
+                  display: none
+              .arrow
+                position: absolute
+                height: 3rem
+                width: 3rem
+                top: unset
+                bottom: 2rem
+                left: 2rem
+              &:hover
+                box-shadow: rgba(0,0,0,0.15) 0rem 0.625rem 3.125rem, rgba(0,0,0,0.05) 0rem 0.625rem 1.25rem
+        > div:nth-child(2)
+          grid-area: item2
+          > div
+            height: 100%
+            width: 100%
+            .lazy-bg-2
+              background-color: rgb(232,234,235)
+              background-image: url('https://img1.wsimg.com/cdnassets/transform/93a0ebb4-c49e-42a6-b046-d8805e0b2968/intl-img-hp-recore-ssl-large-portrait')
+              border-radius: 10px
+              padding: 2rem
+              position: relative
+              display: grid
+              grid-template-columns: 1fr
+              background-repeat: no-repeat
+              background-size: cover
+              background-position: center
+              height: 100%
+              width: 100%
+              > div
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                text-align: start
+                justify-content: flex-end
+                position: relative
+                padding-right: 0.5rem
+                > h3
+                  > span
+                    position: relative
+                    display: inline-block
+                    font-size: 2.1rem
+                    font-weight: 600
+                > p
+                  display: none
+                > div
+                  display: none
+              .arrow
+                position: absolute
+                top: 2rem
+                right: 2rem
+                height: 3rem
+                width: 3rem
+              &:hover
+                box-shadow: rgba(0,0,0,0.15) 0rem 0.625rem 3.125rem, rgba(0,0,0,0.05) 0rem 0.625rem 1.25rem
 
 @media (min-width: 520px)
   .main

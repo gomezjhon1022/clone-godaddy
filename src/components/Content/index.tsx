@@ -149,7 +149,7 @@ export function Content () {
               </div>
             </div>
           </div>
-          <div className='card-grid'>
+          <div className={`${interest==='WordPress and Security'?'card-grid-recommended':'card-grid'}`}>
             {(interest==='Domains') &&
               <>
                 <div className='recore-card-item'>
@@ -306,7 +306,59 @@ export function Content () {
             }
             { (interest==='WordPress and Security') &&
               <>
-                <div>Prueba para WordPress</div>
+                <div className='recore-card-item'>
+                  <div>
+                    <div className='lazy-bg'>
+                      <div>
+                        <h3>
+                          <span>
+                            WordPress £3.99 /mo
+                          </span>
+                        </h3>
+                        <p>Let AI quickly build a fully-managed website that's always up to date, with no worries.</p>
+                        <div>
+                          <div>
+                            <a>
+                              <span>Explore WordPress Plans</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='arrow'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='recore-card-item'>
+                  <div>
+                    <div className='lazy-bg-2'>
+                      <div>
+                        <p>
+                          <span>All-in-one</span>
+                        </p>
+                        <h3>
+                          <span>SSL Security £49.99 /yr</span>
+                        </h3>
+                        <p>Help keep your site secure and boost search ranking with an SSL Certificate.</p>
+                        <div>
+                          <div>
+                            <a>
+                              <span>Get Protection</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='arrow'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </>
             }
           </div>
