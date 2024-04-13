@@ -372,7 +372,6 @@
             width: 100%
             .lazy-bg
               background-image: url('https://img1.wsimg.com/cdnassets/transform/dd931e32-181a-4609-9690-d036fed80802/intl-img-hp-recore-wp-large-portrait')
-              background-image: url('https://img1.wsimg.com/cdnassets/transform/dd931e32-181a-4609-9690-d036fed80802/intl-img-hp-recore-wp-large-portrait')
               display: grid
               grid-template-columns: 55% 45%
               height: 100%
@@ -421,7 +420,7 @@
               padding: 2rem
               position: relative
               display: grid
-              grid-template-columns: 1fr
+              grid-template-columns: 50% 50%
               background-repeat: no-repeat
               background-size: cover
               background-position: center
@@ -435,20 +434,31 @@
                 justify-content: flex-end
                 position: relative
                 padding-right: 0.5rem
+                > p:nth-child(1)
+                  margin-bottom: 1rem
+                  font-size: 1.7rem
+                  > span
+                    display: inline-block
+                    background-color: #a6fff8
+                    padding: 0 0.7rem
+                    height: 2.4rem
+                    text-transform: uppercase
                 > h3
                   > span
                     position: relative
                     display: inline-block
-                    font-size: 2.1rem
+                    font-size: 2.8rem
                     font-weight: 600
-                > p
+                    padding-bottom: 3.5rem
+                > p:nth-child(3)
                   display: none
                 > div
                   display: none
               .arrow
                 position: absolute
-                top: 2rem
-                right: 2rem
+                top: unset
+                bottom: 2rem
+                left: 2rem
                 height: 3rem
                 width: 3rem
               &:hover
@@ -462,6 +472,10 @@
           padding: 1rem calc( 10vw + 48px  ) 4rem calc( 10vw + 48px  )
           min-height: 62rem
           grid-template-rows: 60% 40%
+        .card-grid-recommended
+          min-height: 72rem
+          padding: 1rem 16vw 4rem 16vw
+
 @media (min-width: 1025px)
   .main
     .main-content
@@ -586,6 +600,24 @@
                         white-space: nowrap
                 .arrow
                   display: none
+        .card-grid-recommended
+          min-height: 62rem
+          grid-template-columns: 1fr 1fr
+          grid-template-rows: 1fr
+          grid-template-areas: 'item1 item2'
+          padding: 1rem 5rem 4rem 5rem
+          gap: 3rem
+          > div:first-child
+            > div
+              .lazy-bg
+                padding: 3rem
+                grid-template-columns: 70% 30%
+                background-image: url('https://img1.wsimg.com/cdnassets/transform/f518bd66-37e2-499a-b577-4f74e2ae1fb3/intl-img-hp-recore-wp-large-landscape')
+          > div:nth-child(2)
+            > div
+              .lazy-bg-2
+                padding: 3rem
+                background-image: url('https://img1.wsimg.com/cdnassets/transform/2f9b315b-04e8-4d4c-9a96-5c002622971e/intl-img-hp-recore-ssl-large-landscape')
 
 @media (min-width: 768px)
   .main
