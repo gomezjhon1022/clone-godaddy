@@ -363,6 +363,59 @@ export function Content () {
             }
           </div>
         </section>
+        <section className='template-wall'>
+          <div className='headline-wrapper'>
+            <h2>
+              <span>Templates designed to sell.</span>
+            </h2>
+            <p>
+              Choose from 100s of designs for every idea and industry.
+            </p>
+          </div>
+          <div className='filter-nav'>
+            <ul></ul>
+          </div>
+          <div className='carrusel'>
+            <div>
+              <div>
+                <div>
+                  <div className='card-1 card-carousel'></div>
+                  <div className='card-2 card-carousel'></div>
+                  <div className='card-3 card-carousel'></div>
+                  <div className='card-4 card-carousel'></div>
+                  <div className='card-5 card-carousel'></div>
+                  <div className='card-6 card-carousel'></div>
+                  <div className='card-7 card-carousel'></div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div className='card-8 card-carousel'></div>
+                  <div className='card-9 card-carousel'></div>
+                  <div className='card-10 card-carousel'></div>
+                  <div className='card-11 card-carousel'></div>
+                  <div className='card-12 card-carousel'></div>
+                  <div className='card-13 card-carousel'></div>
+                  <div className='card-14 card-carousel'></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='pause-play'>
+            <button className='play-button'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
+              </svg>
+            </button>
+          </div>
+          <div className='browser-templates'>
+            <div>
+              <a>
+                <span>Browse All Templates</span>
+              </a>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
   )
