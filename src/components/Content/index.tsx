@@ -365,12 +365,14 @@ export function Content () {
         </section>
         <section className='template-wall'>
           <div className='headline-wrapper'>
-            <h2>
-              <span>Templates designed to sell.</span>
-            </h2>
-            <p>
-              Choose from 100s of designs for every idea and industry.
-            </p>
+            <div>
+              <h2>
+                <span>Templates designed to sell.</span>
+              </h2>
+              <p>
+                Choose from 100s of designs for every idea and industry.
+              </p>
+            </div>
           </div>
           <div className='filter-nav'>
             <ul></ul>
