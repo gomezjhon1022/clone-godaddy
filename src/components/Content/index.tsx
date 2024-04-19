@@ -377,9 +377,9 @@ export function Content () {
           <div className='filter-nav'>
             <ul></ul>
           </div>
-          <div className='carrusel'>
+          <div className='carousel'>
             <div>
-              <div>
+              <div className='card-carousel-part1'>
                 <div>
                   <div className='card-1 card-carousel'></div>
                   <div className='card-2 card-carousel'></div>
@@ -390,7 +390,7 @@ export function Content () {
                   <div className='card-7 card-carousel'></div>
                 </div>
               </div>
-              <div>
+              <div className='card-carousel-part2'>
                 <div>
                   <div className='card-8 card-carousel'></div>
                   <div className='card-9 card-carousel'></div>
