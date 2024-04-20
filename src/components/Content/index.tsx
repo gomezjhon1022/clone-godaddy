@@ -379,26 +379,26 @@ export function Content () {
           </div>
           <div className='carousel'>
             <div>
-              <div className='card-carousel-part1'>
+              <div className='card-carousel-container'>
                 <div>
-                  <div className='card-1 card-carousel'></div>
-                  <div className='card-2 card-carousel'></div>
-                  <div className='card-3 card-carousel'></div>
-                  <div className='card-4 card-carousel'></div>
-                  <div className='card-5 card-carousel'></div>
-                  <div className='card-6 card-carousel'></div>
-                  <div className='card-7 card-carousel'></div>
+                  <div className='card-carousel-1 card-carousel'></div>
+                  <div className='card-carousel-2 card-carousel'></div>
+                  <div className='card-carousel-3 card-carousel'></div>
+                  <div className='card-carousel-4 card-carousel'></div>
+                  <div className='card-carousel-5 card-carousel'></div>
+                  <div className='card-carousel-6 card-carousel'></div>
+                  <div className='card-carousel-7 card-carousel'></div>
                 </div>
               </div>
-              <div className='card-carousel-part2'>
+              <div className='card-carousel-container'>
                 <div>
-                  <div className='card-8 card-carousel'></div>
-                  <div className='card-9 card-carousel'></div>
-                  <div className='card-10 card-carousel'></div>
-                  <div className='card-11 card-carousel'></div>
-                  <div className='card-12 card-carousel'></div>
-                  <div className='card-13 card-carousel'></div>
-                  <div className='card-14 card-carousel'></div>
+                  <div className='card-carousel-1 card-carousel'></div>
+                  <div className='card-carousel-2 card-carousel'></div>
+                  <div className='card-carousel-3 card-carousel'></div>
+                  <div className='card-carousel-4 card-carousel'></div>
+                  <div className='card-carousel-5 card-carousel'></div>
+                  <div className='card-carousel-6 card-carousel'></div>
+                  <div className='card-carousel-7 card-carousel'></div>
                 </div>
               </div>
             </div>
