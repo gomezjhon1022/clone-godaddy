@@ -524,6 +524,7 @@
                 width: 17rem
                 transition: all 600ms cubic-bezier(0.1,0.25,0.3,1)
                 background-color: #d6d6d6
+                border-radius: 1.5rem
               .card-carousel-1
                 background-image: url("https://img1.wsimg.com/cdnassets/transform/9f211b73-ad4a-4e0a-9143-56fa6b44531d/koartgallerytemplate1_mobile")
               .card-carousel-2
@@ -538,11 +539,21 @@
                 background-image: url("https://img1.wsimg.com/cdnassets/transform/4e212d5c-1c77-4f9d-b62b-3cca33c99ece/komusicmusicianbttemplate_mobile")
               .card-carousel-7
                 background-image: url("https://img1.wsimg.com/cdnassets/transform/5be08aac-da26-4a95-816b-e5b5abe1c46b/retailsingleproduct_mobile")
-
-
-
-
-
+      .browser-templates
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 8vw 0 5rem 0
+        > div
+          display: inline-flex
+          flex-direction: column
+          > a
+            background-color: #111
+            color: #fff
+            border-radius: 0.7rem
+            font-size: 2rem
+            height: 5rem
+            padding: 1.25rem 2rem
 
 @keyframes scroll-carousel
   0%
