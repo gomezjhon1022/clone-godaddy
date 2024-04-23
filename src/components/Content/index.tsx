@@ -3,10 +3,14 @@ import './Content.sass'
 
 export function Content () {
   const [interest, setInterest] = useState('Domains')
+  const [isCarouselPlaying, setIsCarouselPlaying] = useState(true)
   const optionsInterest = [ 'Domains', 'Recommended','WordPress and Security' ]
   const handleSelection = (option:string) => {
     setInterest(option)
   }
+  const handlePlaying = () => (
+    setIsCarouselPlaying(!isCarouselPlaying)
+  )
   return (
     <main className="main">
       <section className='marquee'>
@@ -379,7 +383,7 @@ export function Content () {
           </div>
           <div className='carousel'>
             <div>
-              <div className='card-carousel-container'>
+              <div className={`card-carousel-container ${isCarouselPlaying?'play':'pause'}`}>
                 <div>
                   <div className='card-carousel-1 card-carousel'></div>
                   <div className='card-carousel-2 card-carousel'></div>
@@ -390,7 +394,7 @@ export function Content () {
                   <div className='card-carousel-7 card-carousel'></div>
                 </div>
               </div>
-              <div className='card-carousel-container'>
+              <div className={`card-carousel-container ${isCarouselPlaying?'play':'pause'}`}>
                 <div>
                   <div className='card-carousel-1 card-carousel'></div>
                   <div className='card-carousel-2 card-carousel'></div>
@@ -404,10 +408,15 @@ export function Content () {
             </div>
           </div>
           <div className='pause-play'>
-            <button className='play-button'>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className='pause'>
+            <button className='play-button' onClick={handlePlaying}>
+              {isCarouselPlaying?
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className='icon-pause'>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
               </svg>
+              :<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="icon-play">
+                <path fillRule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clipRule="evenodd" />
+              </svg>
+            }
             </button>
           </div>
           <div className='browser-templates'>

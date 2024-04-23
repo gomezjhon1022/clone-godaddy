@@ -491,7 +491,6 @@
         margin-bottom: 2rem
         overflow-x: scroll
       .carousel
-        white-space: nowrap
         > div
           overflow-x: hidden
           display: flex
@@ -499,46 +498,51 @@
           position: relative
           width: 100%
           height: 100%
-          .card-carousel-container
-            display: flex
-            flex: 0 0 auto
-            min-width: 100%
-            flex-direction: row
-            align-items: center
-            animation: scroll-carousel 66.5s linear 0s infinite
+          .play
             animation-play-state: running
-            animation-delay: 0s
-            animation-direction: normal
-            animation-fill-mode: forwards
-            > div
-              display: inline-flex
-              white-space: nowrap
+          .pause
+            animation-play-state: paused
+      .carousel
+        white-space: nowrap
+        .card-carousel-container
+          display: flex
+          flex: 0 0 auto
+          min-width: 100%
+          flex-direction: row
+          align-items: center
+          animation: scroll-carousel 66.5s linear 0s infinite
+          animation-delay: 0s
+          animation-direction: normal
+          animation-fill-mode: forwards
+          > div
+            display: inline-flex
+            white-space: nowrap
+            height: 100%
+            .card-carousel
+              margin: 0 1rem
+              background-size: cover
+              background-repeat: no-repeat
+              background-position: center center
+              cursor: pointer
               height: 100%
-              .card-carousel
-                margin: 0 1rem
-                background-size: cover
-                background-repeat: no-repeat
-                background-position: center center
-                cursor: pointer
-                height: 100%
-                width: 17rem
-                transition: all 600ms cubic-bezier(0.1,0.25,0.3,1)
-                background-color: #d6d6d6
-                border-radius: 1.5rem
-              .card-carousel-1
-                background-image: url("https://img1.wsimg.com/cdnassets/transform/9f211b73-ad4a-4e0a-9143-56fa6b44531d/koartgallerytemplate1_mobile")
-              .card-carousel-2
-                background-image: url("https://img1.wsimg.com/cdnassets/transform/d196e84d-26d6-47d0-b4df-b3e493a3934c/kohealthalternativetemplate_mobile")
-              .card-carousel-3
-                background-image: url("https://img1.wsimg.com/cdnassets/transform/35ced7b2-75c9-42c2-a6be-6ee93c2bcf1e/kobookstoretemplate_mobile")
-              .card-carousel-4
-                background-image: url("https://img1.wsimg.com/cdnassets/transform/a4beaca9-862a-416c-a247-abc591413f9d/koretailfurnituretemplate_mobile")
-              .card-carousel-5
-                background-image: url("https://img1.wsimg.com/cdnassets/transform/2fb9af64-ea5d-4624-b7a2-e9e96e4ff7af/kohomehousewarestemplate_mobile")
-              .card-carousel-6
-                background-image: url("https://img1.wsimg.com/cdnassets/transform/4e212d5c-1c77-4f9d-b62b-3cca33c99ece/komusicmusicianbttemplate_mobile")
-              .card-carousel-7
-                background-image: url("https://img1.wsimg.com/cdnassets/transform/5be08aac-da26-4a95-816b-e5b5abe1c46b/retailsingleproduct_mobile")
+              width: 17rem
+              transition: all 600ms cubic-bezier(0.1,0.25,0.3,1)
+              background-color: #d6d6d6
+              border-radius: 1.5rem
+            .card-carousel-1
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/9f211b73-ad4a-4e0a-9143-56fa6b44531d/koartgallerytemplate1_mobile")
+            .card-carousel-2
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/d196e84d-26d6-47d0-b4df-b3e493a3934c/kohealthalternativetemplate_mobile")
+            .card-carousel-3
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/35ced7b2-75c9-42c2-a6be-6ee93c2bcf1e/kobookstoretemplate_mobile")
+            .card-carousel-4
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/a4beaca9-862a-416c-a247-abc591413f9d/koretailfurnituretemplate_mobile")
+            .card-carousel-5
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/2fb9af64-ea5d-4624-b7a2-e9e96e4ff7af/kohomehousewarestemplate_mobile")
+            .card-carousel-6
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/4e212d5c-1c77-4f9d-b62b-3cca33c99ece/komusicmusicianbttemplate_mobile")
+            .card-carousel-7
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/5be08aac-da26-4a95-816b-e5b5abe1c46b/retailsingleproduct_mobile")
       .browser-templates
         display: flex
         justify-content: center
@@ -570,10 +574,10 @@
           justify-content: center
           align-items: center
           transition: opacity 500ms cubic-bezier(0.16,1,0.3,1)
-          .pause
+          .icon-pause, .icon-play
             height: 2rem
             width: 2rem
-      
+
 
 @keyframes scroll-carousel
   0%
