@@ -385,24 +385,262 @@ export function Content () {
             <div>
               <div className={`card-carousel-container ${isCarouselPlaying?'play':'pause'}`}>
                 <div>
-                  <div className='card-carousel-1 card-carousel'></div>
-                  <div className='card-carousel-2 card-carousel'></div>
-                  <div className='card-carousel-3 card-carousel'></div>
-                  <div className='card-carousel-4 card-carousel'></div>
-                  <div className='card-carousel-5 card-carousel'></div>
-                  <div className='card-carousel-6 card-carousel'></div>
-                  <div className='card-carousel-7 card-carousel'></div>
+                  <div className='card-carousel-1 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-2 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-3 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-4 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-5 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-6 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-7 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className={`card-carousel-container ${isCarouselPlaying?'play':'pause'}`}>
                 <div>
-                  <div className='card-carousel-1 card-carousel'></div>
-                  <div className='card-carousel-2 card-carousel'></div>
-                  <div className='card-carousel-3 card-carousel'></div>
-                  <div className='card-carousel-4 card-carousel'></div>
-                  <div className='card-carousel-5 card-carousel'></div>
-                  <div className='card-carousel-6 card-carousel'></div>
-                  <div className='card-carousel-7 card-carousel'></div>
+                  <div className='card-carousel-1 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-2 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-3 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-4 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-5 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-6 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div className='card-carousel-7 card-carousel'>
+                    <div className='card-overlay'>
+                      <div>
+                        <a>
+                          <span>Start Editing</span>
+                        </a>
+                        <button>
+                          <span>Preview</span>
+                        </button>
+                      </div>
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="card-eye">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
