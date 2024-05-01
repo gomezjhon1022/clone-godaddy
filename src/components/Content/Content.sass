@@ -503,7 +503,7 @@
             animation-play-state: paused
       .carousel
         > div
-          &:hover .card-container .play
+          &:hover .card-carousel-container
             animation-play-state: paused
       .carousel
         white-space: nowrap
@@ -545,6 +545,17 @@
                 height: 100%
                 > button
                   display: none
+                  width: 100%
+                  height: 100%
+                  display: grid
+                  place-items: center
+                  padding: 0
+                  margin: 0
+                  z-index: 6
+                  .card-eye
+                    height: 3rem
+                    width: 3rem
+                    stroke: $white
                 > div
                   display: flex
                   flex-direction: column
@@ -1085,3 +1096,20 @@
         .carousel
           .card-carousel-container
             animation: scroll-carousel 66.5s linear 0s infinite
+
+@media only screen and (max-width: 768px)
+  .main
+    .main-content
+      .template-wall
+        .carousel
+          .card-carousel-container
+            > div
+              .card-carousel
+                &:active .card-overlay > button
+                  width: 100%
+                  height: 100%
+                  display: grid
+                  place-items: center
+                  background: transparent
+                &:hover .card-overlay > div
+                  display: none
