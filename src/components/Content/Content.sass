@@ -547,17 +547,16 @@
                   display: none
                   width: 100%
                   height: 100%
-                  display: grid
+                  // display: grid
                   place-items: center
                   padding: 0
                   margin: 0
-                  z-index: 6
                   .card-eye
                     height: 3rem
                     width: 3rem
                     stroke: $white
                 > div
-                  display: flex
+                  display: none
                   flex-direction: column
                   align-items: center
                   justify-content: center
@@ -574,6 +573,8 @@
                     font-size: 2rem
               &:hover .card-overlay
                 opacity: 1
+              &:hover .card-overlay > div
+                display: flex
 
             .card-carousel-1
               background-image: url("https://img1.wsimg.com/cdnassets/transform/9f211b73-ad4a-4e0a-9143-56fa6b44531d/koartgallerytemplate1_mobile")
@@ -1113,3 +1114,5 @@
                   background: transparent
                 &:hover .card-overlay > div
                   display: none
+                &:hover .card-overlay > button
+                  display: grid
