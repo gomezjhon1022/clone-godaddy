@@ -2,138 +2,6 @@
 
 .main
   width: 100%
-  .marquee
-    padding: 0 2rem
-    > div
-      display: grid
-      grid-template-rows: 1fr auto auto
-      grid-template-columns: 100%
-      row-gap: 2rem
-      .primary-panel
-        display: grid
-        background-image: url("https://img1.wsimg.com/cdnassets/transform/4c5fe153-b3a2-416e-b772-cfd315360e36/row-mrq-hp-portrait")
-        background-repeat: no repeat
-        background-position: center bottom
-        background-size: cover
-        grid-auto-rows: 0.5fr
-        min-height: 64vw
-        border-radius: 3rem
-        .primary-panel-hidden
-          grid-row: 2
-          min-height: 65vmin
-        .primary-headline
-          display: flex
-          flex-direction: column
-          align-items: center
-          padding: 1.8rem
-          justify-content: space-between
-          .textHeading
-            margin-bottom: 2rem
-            font-size: 2rem
-          .subtitle
-            margin-bottom: 2rem
-            font-size: 4rem
-            font-weight: bold
-            width: 100%
-            text-align: center
-          .description
-            margin-bottom: 2rem
-            font-size: 2rem
-            font-weight: 500
-            line-height: 1.8
-            text-align: center
-            max-width: 50rem
-          .button-start
-            width: 100%
-            height: 6rem
-            margin-bottom: 2rem
-            display: flex
-            justify-content: center
-            > div
-              width: 50%
-              height: 100%
-              background-color: $black
-              display: flex
-              align-items: center
-              justify-content: center
-              border-radius: 1rem
-              cursor: pointer
-              > a
-                font-size: 1.8rem
-                color:$white
-                font-weight: 700
-          .tag
-            margin-bottom: 3rem
-            font-size: 1.5rem
-            font-weight: 500
-      .secondary-panel
-        position: relative
-        background-color: #d8efef
-        padding: 2rem
-        display: grid
-        grid-template-columns: 75vw auto
-        align-items: center
-        border-radius: 3rem
-        .secondary-headline
-          display: flex
-          flex-direction: column
-          justify-content: space-between
-          width: 100%
-          > h2
-            margin-bottom: 2rem
-            font-size: 1.8rem
-          > h3
-            font-size: 2.5rem
-            margin-bottom: 2rem
-            max-width: 80%
-            > span
-              display: inline-block
-              width: 92%
-          .description
-            display: none
-            margin-bottom: 2rem
-            font-size: 2rem
-            font-weight: 500
-            line-height: 1.58
-            > span
-              display: inline-block
-              width: 100%
-          .button-find-domain
-            display: none
-            width: 60%
-            margin-bottom: 2rem
-            justify-content: center
-            > div
-              background-color: $black
-              width: 75%
-              min-width: 19rem
-              height: 6rem
-              border-radius:1rem
-              color:$white
-              display: grid
-              place-items: center
-              cursor: pointer
-              font-size: 2rem
-              font-weight: 500
-          .include
-            margin-bottom: 2rem
-            font-size: 1.5rem
-            font-weight: 500
-        .link-button
-          margin: auto
-          height: 6rem
-          width: 6rem
-          > div
-            width: 100%
-            height: 100%
-            display: flex
-            flex-direction: column
-            align-items: flex-end
-            > a
-              display: inline-flex
-              width: 4rem
-              height: 6rem
-
   .main-content
     .product-grid-container
       padding: 0 2rem
@@ -547,7 +415,6 @@
                   display: none
                   width: 100%
                   height: 100%
-                  // display: grid
                   place-items: center
                   padding: 0
                   margin: 0
@@ -886,38 +753,6 @@
 
 @media (min-width: 768px)
   .main
-    .marquee
-      > div
-        .primary-panel
-          background-image: url("https://img1.wsimg.com/cdnassets/transform/76672651-e89d-4ea4-8568-70026f028377/row-mrq-hp-tablet")
-          background-position: left center
-          grid-template-columns: 45% auto
-          grid-template-rows: auto auto
-          .primary-headline
-            padding: 4rem
-            align-items: start
-            .textHeading, .subtitle, .description
-              text-align: start
-              line-height: 1.5
-            .button-start
-              justify-content: start
-              > div
-                width: 95%
-                max-width: 25rem
-            .tag
-              font-weight: 400
-          .primary-panel-hidden
-            display: none
-        .secondary-panel
-          padding: 2rem 4rem
-          grid-template-columns: 70vw auto
-          .link-button
-            display: none
-          .secondary-headline
-            > h3
-              font-size: 3rem
-            .button-find-domain
-              display: block
     .main-content
       .filter-nav
         > div
@@ -926,34 +761,6 @@
 
 @media (min-width: 992px)
   .main
-    .marquee
-      > div
-        grid-template-columns: auto 25%
-        grid-template-rows: 1fr
-        column-gap: 3rem
-        .primary-panel
-          grid-template-columns: 54% auto
-          min-height: 35vw
-          .primary-headline
-            padding: 2.5vw
-            height: auto
-            .description
-              width: 90%
-        .secondary-panel
-          place-items: center
-          grid-template-columns: 1fr
-          .secondary-headline
-            text-align: center
-            .description
-              display: block
-              width: 90%
-            > h3
-              max-width: 100%
-              > span
-                width: 100%
-            .button-find-domain
-              width: 100%
-              display: flex
     .main-content
       .template-wall
         .headline-wrapper
@@ -962,30 +769,6 @@
           margin: 2.4rem 0 4.8rem 0
         .pause-play
           bottom: 4.8rem
-
-@media (min-width: 1024px)
-    .main
-      .marquee
-        > div
-          .primary-panel
-            background-position: center
-            grid-template-columns: 48% auto
-            .primary-headline
-              padding: 2.5vw
-              .subtitle
-                font-size: 5.5rem
-                line-height: 1.2
-          .secondary-panel
-            padding: 3rem
-
-
-@media (min-width: 1720px)
-  .main
-    .marquee
-      > div
-        .primary-panel
-          min-height: 31vw
-
 
 @media (max-width: 991px)
   .filter-nav
