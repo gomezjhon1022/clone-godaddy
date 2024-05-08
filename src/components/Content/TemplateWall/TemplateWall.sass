@@ -1,0 +1,351 @@
+@use '../../../styles/variables' as *
+
+.main
+  .main-content
+    .template-wall
+      background-color: #FDE9DB
+      position: relative
+      overflow-x: hidden
+      margin: 4.8rem 0
+      .headline-wrapper
+        padding: 0 4vw
+        margin-top: 6rem
+        > div
+          display: flex
+          flex-direction: column
+          align-items: center
+          position: relative
+          text-align: center
+          > h2
+            margin-bottom: 2rem
+            font-size: 4rem
+            white-space: break-spaces
+          > p
+            font-size: 2.25rem
+            margin-bottom: 2rem
+      .filter-nav
+        margin-bottom: 2rem
+      .carousel
+        > div
+          overflow-x: hidden
+          display: flex
+          flex-direction: row
+          position: relative
+          width: 100%
+          height: 100%
+          .play
+            animation-play-state: running
+          .pause
+            animation-play-state: paused
+      .carousel
+        > div
+          &:hover .card-carousel-container
+            animation-play-state: paused
+      .carousel
+        white-space: nowrap
+        height: 54.7rem
+        margin: 5rem 0
+        .card-carousel-container
+          display: flex
+          flex: 0 0 auto
+          min-width: 100%
+          flex-direction: row
+          align-items: center
+          animation: scroll-carousel 176s linear 0s infinite
+          animation-delay: 0s
+          animation-direction: normal
+          animation-fill-mode: forwards
+          > div
+            display: inline-flex
+            white-space: nowrap
+            height: 100%
+            .card-carousel
+              margin: 0 1rem
+              background-size: cover
+              background-repeat: no-repeat
+              background-position: center center
+              cursor: pointer
+              height: 100%
+              width: 30.5rem
+              transition: all 600ms cubic-bezier(0.1,0.25,0.3,1)
+              background-color: #d6d6d6
+              border-radius: 1.5rem
+              .card-overlay
+                display: grid
+                place-items: center
+                opacity: 0
+                border-radius: 1.5rem
+                background: rgba(0, 0, 0, 0.7 )
+                transition: all 600ms cubic-bezier(0.1, 0.25, 0.3, 1)
+                position: relative
+                height: 100%
+                > button
+                  display: none
+                  width: 100%
+                  height: 100%
+                  place-items: center
+                  padding: 0
+                  margin: 0
+                  .card-eye
+                    height: 3rem
+                    width: 3rem
+                    stroke: $white
+                > div
+                  display: none
+                  flex-direction: column
+                  align-items: center
+                  justify-content: center
+                  width: 100%
+                  > a
+                    padding: 1.5rem 6rem
+                    color: #111
+                    background-color: $white
+                    border-radius: 0.75rem
+                    font-size: 2rem
+                  > button
+                    background-color: transparent
+                    color: $white
+                    font-size: 2rem
+              &:hover .card-overlay
+                opacity: 1
+              &:hover .card-overlay > div
+                display: flex
+
+            .card-carousel-1
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/9f211b73-ad4a-4e0a-9143-56fa6b44531d/koartgallerytemplate1_mobile")
+            .card-carousel-2
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/d196e84d-26d6-47d0-b4df-b3e493a3934c/kohealthalternativetemplate_mobile")
+            .card-carousel-3
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/35ced7b2-75c9-42c2-a6be-6ee93c2bcf1e/kobookstoretemplate_mobile")
+            .card-carousel-4
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/a4beaca9-862a-416c-a247-abc591413f9d/koretailfurnituretemplate_mobile")
+            .card-carousel-5
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/2fb9af64-ea5d-4624-b7a2-e9e96e4ff7af/kohomehousewarestemplate_mobile")
+            .card-carousel-6
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/4e212d5c-1c77-4f9d-b62b-3cca33c99ece/komusicmusicianbttemplate_mobile")
+            .card-carousel-7
+              background-image: url("https://img1.wsimg.com/cdnassets/transform/5be08aac-da26-4a95-816b-e5b5abe1c46b/retailsingleproduct_mobile")
+      .browser-templates
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 8vw 0 5rem 0
+        > div
+          display: inline-flex
+          flex-direction: column
+          > a
+            background-color: #111
+            color: #fff
+            border-radius: 0.7rem
+            font-size: 2rem
+            height: 5rem
+            padding: 1.25rem 2rem
+            display: flex
+            justify-content: center
+            align-items: center
+      .pause-play
+        position: absolute
+        right: 2vw
+        .play-button
+          border-radius: 50%
+          cursor: pointer
+          border: 3px solid #111
+          height: 6.25rem
+          width: 6.25rem
+          opacity: 0.5
+          position: relative
+          display: flex
+          justify-content: center
+          align-items: center
+          transition: opacity 500ms cubic-bezier(0.16,1,0.3,1)
+          .icon-pause, .icon-play
+            height: 2rem
+            width: 2rem
+
+@keyframes scroll-carousel
+  0%
+    transform: translate3d(0,0,0)
+  100%
+    transform: translate3d(-100%,0,0)
+
+@media (min-width: 520px)
+  .main
+    .main-content
+      .template-wall
+        .headline-wrapper
+          margin-top: 6rem
+        .carousel
+          .card-carousel-container
+            > div
+              .card-carousel-1
+                background-image: url("https://img1.wsimg.com/cdnassets/transform/c5ec380c-f411-41f0-8d20-eb469ad39b05/koartgallerytemplate1_desktop")
+                width: 47.5rem
+              .card-carousel-2
+                background-image: url("https://img1.wsimg.com/cdnassets/transform/dc7a7795-63cd-410f-9d97-15ca7d89bb04/kohealthalternativetemplate_desktop")
+                width: 47.5rem
+              .card-carousel-5
+                background-image: url("https://img1.wsimg.com/cdnassets/transform/cfb06d21-498d-4421-9355-167d720e015b/kohomehousewarestemplate_desktop")
+                width: 47.5rem
+              .card-carousel-6
+                background-image: url("https://img1.wsimg.com/cdnassets/transform/2640ac6f-d6cf-46e4-8186-2bab99ae0675/komusicmusicianbttemplate_desktop")
+                width: 47.5rem
+              .card-carousel-7
+                background-image: url("https://img1.wsimg.com/cdnassets/transform/1faf7a31-892d-460d-a6d3-e6fce3db9d1f/retailsingleproduct")
+                width: 47.5rem
+        .browser-templates
+          margin: 6vw 0
+          > div
+            > a
+              height: 6.3rem
+              padding: 1.5rem 6rem
+        .pause-play
+          bottom: 6vw
+
+@media (min-width: 768px)
+  .main
+    .main-content
+      .filter-nav
+        > div
+          > ul
+            justify-content: center
+
+@media (min-width: 992px)
+  .main
+    .main-content
+      .template-wall
+        .headline-wrapper
+          margin-top: 4vw
+        .browser-templates
+          margin: 2.4rem 0 4.8rem 0
+        .pause-play
+          bottom: 4.8rem
+
+@media (max-width: 991px)
+  .filter-nav
+    > div
+      > ul
+        justify-content: flex-start
+        padding-inline-start: 2rem
+        > li
+          display: flex
+          justify-content: center
+          align-items: center
+          margin: 1.5rem 0
+
+@media (max-width: 1999px)
+  .filter-nav
+    > div
+      > ul
+        column-gap: 1rem
+        > li
+          > button
+            padding: 1.25rem 2rem
+            height: 5.5rem
+
+@media (max-width: 1199px)
+  .main
+    .main-content
+      .template-wall
+        .carousel
+          height: 30rem
+          margin: 2rem 0
+        .card-carousel-container
+          .card-carousel
+            width: 17rem
+
+
+@media (max-width: 1279px)
+    .main-content
+      .template-wall
+        .carousel
+          height: 39rem
+          margin: 3rem 0
+
+@media (min-width: 1199px)
+  .main
+    .main-content
+      .template-wall
+        .headline-wrapper
+          > div
+            > h2
+              font-size: 4.5rem
+        .carousel
+          .card-carousel-container
+            > div
+              .card-carousel-1
+                width: 61.25rem
+              .card-carousel-2
+                width: 61.25rem
+              .card-carousel-5
+                width: 61.25rem
+              .card-carousel-6
+                width: 61.25rem
+              .card-carousel-7
+                width: 61.25rem
+              .card-carousel
+                margin: 0 2rem
+
+@media (min-width: 1279px)
+  .main
+    .main-content
+      .template-wall
+        .headline-wrapper
+          > div
+            > h2
+              font-size: 5.5rem
+        .carousel
+          .card-carousel-container
+            > div
+              .card-carousel-1
+                width: 85.5rem
+              .card-carousel-2
+                width: 85.5rem
+              .card-carousel-5
+                width: 85.5rem
+              .card-carousel-6
+                width: 85.5rem
+              .card-carousel-7
+                width: 85.5rem
+              .card-carousel
+                margin: 0 3rem
+
+@media (max-width: 1278px)
+  .main
+    .main-content
+      .template-wall
+        .carousel
+          .card-carousel-container
+            animation: scroll-carousel 126.5s linear 0s infinite
+@media (max-width: 1198px)
+  .main
+    .main-content
+      .template-wall
+        .carousel
+          .card-carousel-container
+            animation: scroll-carousel 95.1s linear 0s infinite
+@media (max-width: 520px)
+  .main
+    .main-content
+      .template-wall
+        .carousel
+          .card-carousel-container
+            animation: scroll-carousel 66.5s linear 0s infinite
+
+@media only screen and (max-width: 768px)
+  .main
+    .main-content
+      .template-wall
+        .carousel
+          .card-carousel-container
+            > div
+              .card-carousel
+                &:active .card-overlay > button
+                  width: 100%
+                  height: 100%
+                  display: grid
+                  place-items: center
+                  background: transparent
+                &:hover .card-overlay > div
+                  display: none
+                &:hover .card-overlay > button
+                  display: grid
