@@ -1,0 +1,34 @@
+@use '../../../styles/variables' as *
+
+.customer-section
+  margin: 6rem 0
+  .customer-headline-wrapper
+    padding: 6rem 1rem 0 2.5rem
+    .customer-headline
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      text-align: start
+      > h2
+        margin-bottom: 2rem
+        font-size: 4rem
+        line-height: 1.3
+  .customer-details
+    margin: 0 2rem
+    height: 400px
+    background-image: url('https://img1.wsimg.com/cdnassets/transform/03790a5c-4503-450f-8786-bbdacfb66dc0/Raheim-Thompson-M')
+
+
+@media (max-width: 991px)
+  .customer-details
+    background-repeat: no-repeat
+    background-size: contain
+    border-radius: 2rem
+
+@media (min-width: 768px)
+  .customer-details
+    background-image: url('https://img1.wsimg.com/cdnassets/transform/03790a5c-4503-450f-8786-bbdacfb66dc0/Raheim-Thompson-M')
+
+@media (min-width: 992px)
+  .customer-details
