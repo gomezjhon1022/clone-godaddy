@@ -15,25 +15,51 @@
         font-size: 4rem
         line-height: 1.3
   .customer-details
-    margin: 0 2rem
-    height: 400px
-    background-image: url('https://img1.wsimg.com/cdnassets/transform/03790a5c-4503-450f-8786-bbdacfb66dc0/Raheim-Thompson-M')
-    color: $black
-    background-color: #f5f7f8
-    background-size: cover
-    border-radius: 20px
     display: flex
-    flex-direction: row-reverse
     position: relative
+    margin: 0 2rem
+    color: $black
+    background-color: $color-gray-bg-card
+    background-color: red
+    background-image: url('https://img1.wsimg.com/cdnassets/transform/03790a5c-4503-450f-8786-bbdacfb66dc0/Raheim-Thompson-M')
+    background-size: cover
+    border-radius: 2.5rem
+    flex-direction: column
+    // height: 950px
+    height: auto
     min-height: 42.5vw
     background-repeat: no-repeat
+    .customer-card
+      position: relative
+      background: $white
+      color: $black
+      width: 47.5rem
+      margin: 3rem 3rem 3rem 0
+      padding: 5rem
+      display: grid
+      border-radius: 1rem
 
+@media (max-width: 767px)
+  .customer-section
+    .customer-details
+      .customer-card
+        width: 100%
+        padding: 3rem
 
 @media (max-width: 991px)
-  .customer-details
-    background-repeat: no-repeat
-    background-size: contain
-    border-radius: 2rem
+  .customer-section
+    .customer-details
+      background-repeat: no-repeat
+      background-size: contain
+      border-radius: 2rem
+      .customer-card
+        width: 100%
+        margin-top: 67%
+        margin-bottom: 0
+        margin-right: 0
+        padding: 4rem
+        background: $color-gray-bg-card
+        border-radius: 0 0 2rem 2rem
 
 @media (min-width: 768px)
   .customer-details
@@ -48,6 +74,11 @@
   .customer-section
     .customer-details
       background-position: center center
+
+@media (max-width: 991px)
+  .customer-section
+    .customer-details
+      background-position: initial
 
 @media (min-width: 1920px)
   .customer-section
