@@ -109,6 +109,23 @@
                     > span
                       display: block
                       white-space: nowrap
+        .card-image
+          display: flex
+          width: auto
+          height: 100%
+          grid-column-start: 2
+          justify-content: flex-end
+          align-self: end
+          > picture
+            height: 33rem
+            > img
+              height: 100%
+              width: auto
+              border-radius: 1rem
+              object-fit: cover
+              vertical-align: middle
+              border-style: none
+              max-width: 100%
 
 @media (max-width: 991px)
   .customer-section
@@ -135,6 +152,10 @@
           > div
             > div
               position: unset
+          .card-image
+            > picture
+              > img
+                display: none
 
 @media (min-width: 768px)
   .customer-details

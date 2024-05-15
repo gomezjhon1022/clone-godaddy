@@ -72,7 +72,11 @@ export function CustomerSection () {
                   </li>
                 </ul>
               </div>
-              <div className='card-image'></div>
+              <div className='card-image'>
+                <picture>
+                  <img src="https://img1.wsimg.com/cdnassets/transform/bc4b4bee-f709-4f8b-b606-a92a74286ae2/Raheim-Thompson-site" />
+                </picture>
+              </div>
             </div>
           </div>
         </div>
