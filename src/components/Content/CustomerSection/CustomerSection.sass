@@ -37,7 +37,10 @@
       display: grid
       border-radius: 1rem
       &-attribution
+        position: absolute
         display: none
+        color: $black
+        font-size: 1.75rem
       &-description
         width: 100%
         margin-bottom: 2rem
@@ -175,8 +178,32 @@
   .customer-section
     .customer-details
       background-position: initial
+      .customer-card
+        &-attribution
+          display: block
+          top: -10rem
+          left: 5rem
+          margin-top: 1rem
+          font-weight: 600
+          > span
+            font-weight: normal
+
 
 @media (min-width: 1920px)
   .customer-section
     .customer-details
       min-height: 70.5vh
+
+@media (min-width: 520px)
+  .customer-section
+    .customer-headline-wrapper
+      padding: 8rem 5rem 2rem 4vw
+
+@media (max-width: 519px)
+  .customer-section
+    .customer-details
+      background-position: initial
+      .customer-card
+        &-attribution
+          top: -7.5rem
+          left: 2rem
