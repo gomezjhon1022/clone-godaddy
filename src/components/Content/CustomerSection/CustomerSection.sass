@@ -62,13 +62,14 @@
           position: relative
           display: grid
           grid-template-columns: 40% 60%
-          > div
+          .wrapper-product-list
+            margin: 0
             position: absolute
             bottom: 0
             left: 0
-            right: 0
+            right: unset
             text-align: start
-            grid: column start 1px
+            grid-column-start: 1
             .card-attribution
               font-weight: normal
               display: block
@@ -153,7 +154,7 @@
         padding: 3rem
         &-links
           > div
-            > div
+            .wrapper-product-list
               position: unset
           .card-image
             > picture
@@ -161,8 +162,11 @@
                 display: none
 
 @media (min-width: 768px)
-  .customer-details
-    background-image: url('https://img1.wsimg.com/cdnassets/transform/03790a5c-4503-450f-8786-bbdacfb66dc0/Raheim-Thompson-M')
+  .customer-section
+    .customer-details
+      background-image: url('https://img1.wsimg.com/cdnassets/transform/03790a5c-4503-450f-8786-bbdacfb66dc0/Raheim-Thompson-M')
+      .customer-card-description
+        margin-bottom: 6rem
 
 @media (min-width: 992px)
   .customer-section
@@ -198,6 +202,12 @@
   .customer-section
     .customer-headline-wrapper
       padding: 8rem 5rem 2rem 4vw
+    .customer-details
+      .customer-card
+        &-description
+          > div
+            > h3
+              font-size: 4rem
 
 @media (max-width: 519px)
   .customer-section

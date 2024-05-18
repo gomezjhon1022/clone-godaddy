@@ -26,7 +26,7 @@ export function CustomerSection () {
           </div>
           <div className='customer-card-links'>
             <div>
-              <div>
+              <div className='wrapper-product-list'>
                 <div className='card-attribution'>
                   <ul>
                     <li>Products used by </li>
