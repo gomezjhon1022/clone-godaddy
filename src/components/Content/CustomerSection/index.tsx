@@ -11,6 +11,11 @@ export function CustomerSection () {
         </div>
       </div>
       <div className='customer-details'>
+        <figcaption className='customer-card-attribution-first'>
+          Rahiem Thompson
+          <br/>
+          <span>roletape.com</span>
+        </figcaption>
         <div className='customer-card'>
           <figcaption className='customer-card-attribution'>
             Rahiem Thompson
