@@ -1,6 +1,7 @@
 import './Comments.sass'
 import { StarGreen } from './Stargreen'
 import { Stargray } from  './Stargray'
+import { StarHalf } from './StarHalf'
 
 export function Comments () {
   return (
@@ -182,19 +183,26 @@ export function Comments () {
           </div>
 
           <div className='comments-rating-overall'>
-            <div >
+            <div>
               <div>
                 <a>
-                  <div>image</div>
-                  <div>image</div>
+                  <div>
+                    <img src='https://img1.wsimg.com/cdnassets/transform/8dbd772a-10ab-46ee-8853-c3c5cbbcdc7b/trustpilot-logo' />
+                  </div>
+                  <div className='rating'>
+                    <StarGreen />
+                    <StarGreen />
+                    <StarGreen />
+                    <StarGreen />
+                    <StarHalf />
+                  </div>
                 </a>
-                <div>
+                <div className='rating-text'>
                   <a>
                     4.7 out of 5 stars based on
-                    <span>97,781</span>
+                    <span> 97,781 </span>
                     reviews
                   </a>
-                  <span>|</span>
                   Showing our 4 and 5 stars reviews.
                 </div>
               </div>

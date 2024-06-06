@@ -69,7 +69,31 @@
           .comments-autor
             font-size: 2.25rem
             font-weight: 400
-
+    .comments-rating-overall
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      > div
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        > div
+          > a
+            > div:first-child
+              > img
+                width: 13.75rem
+            .rating
+              display: flex
+              gap: 0.25rem
+              margin: 1.5rem 0
+              > svg
+                height: 3.75rem
+                width: 3.75rem
+          .rating-text
+            font-size: 1.75rem
+            display: flex
+            flex-direction: column
+            font-weight: 500
 
 @media screen and ( max-width: 767px)
   .comments
