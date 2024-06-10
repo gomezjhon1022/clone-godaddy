@@ -73,7 +73,7 @@
       display: flex
       justify-content: space-between
       align-items: flex-start
-      > div
+      &-container
         display: flex
         flex-direction: column
         align-items: flex-start
@@ -94,6 +94,46 @@
             display: flex
             flex-direction: column
             font-weight: 500
+      .controls-wrapper
+        display: none
+        align-items: center
+        justify-content: flex-end
+        .comments-previous
+          margin-inline-end: 2rem
+        .comments-previous
+          display: flex
+          align-items: center
+          justify-content: center
+          background: none
+          border-radius: 50%
+          outline: none
+          border: 0.25rem solid $black
+          padding: 2rem
+          cursor: pointer
+          > div
+            display: flex
+            align-items: center
+            justify-content: center
+            .arrow-left
+              height: 3.6rem
+              width: 3.6rem
+        .comments-next
+          display: flex
+          align-items: center
+          justify-content: center
+          background: none
+          border-radius: 50%
+          outline: none
+          border: 0.25rem solid $black
+          padding: 2rem
+          cursor: pointer
+          > div
+            display: flex
+            align-items: center
+            justify-content: center
+            .arrow-right
+              height: 3.6rem
+              width: 3.6rem
 
 @media screen and ( max-width: 767px)
   .comments
@@ -102,5 +142,23 @@
         overflow-x: scroll
         scroll-snap-type: x mandatory
 
+@media (min-width: 768px)
+  .comments-list
+    .comments-slide
+      .container-card
+        .comments-card
+          width: calc((100vw - 8vw - 2rem )/2)
+    .comments-rating-overall
+      width: calc( 100vw - 8vw )
+      .controls-wrapper
+        display: flex
+
+@media (min-width: 768px)
+  .comments-list
+    .comments-slide
+      gap: 3rem
+      .container-card
+        .comments-card
+          width: calc((100vw - 8vw - 6rem) / 3)
 
 

@@ -155,7 +155,11 @@ export function Comments () {
                 <div>
                   <p className='comments-title'>Once I found GoDaddy I never looked…</p>
                   <div className='comments-rating'>
-                    starts
+                    < StarGreen />
+                    < StarGreen />
+                    < StarGreen />
+                    < StarGreen />
+                    < StarGreen />
                   </div>
                   <p className='comments-description comments-s'>Once I found GoDaddy I never looked back. Had tried a few website building programs online but GoDaddy was the most user friendly by far!  Easy to start, affordable, excellent customer service and its very simple to maintain your site.</p>
                 </div>
@@ -174,7 +178,7 @@ export function Comments () {
                     < StarGreen />
                     < StarGreen />
                   </div>
-                  <p className='comments-description comments-s'>Godaddy has made running a business for me super simple. There is a lot that goes into being a small business owner. Godaddy's efficiency helps me to be more present for my clients.</p>
+                  <p className='comments-description comments-m'>Godaddy has made running a business for me super simple. There is a lot that goes into being a small business owner. Godaddy's efficiency helps me to be more present for my clients.</p>
                 </div>
 
                 <p className='comments-autor'>La'Toya Guillory</p>
@@ -183,7 +187,7 @@ export function Comments () {
           </div>
 
           <div className='comments-rating-overall'>
-            <div>
+            <div className='comments-rating-overall-container'>
               <div>
                 <a>
                   <div>
@@ -206,6 +210,22 @@ export function Comments () {
                   Showing our 4 and 5 stars reviews.
                 </div>
               </div>
+            </div>
+            <div className='controls-wrapper'>
+              <button className='comments-previous'>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-left">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                  </svg>
+                </div>
+              </button>
+              <button className='comments-next'>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="arrow-right">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </div>
+              </button>
             </div>
           </div>
         </div>
