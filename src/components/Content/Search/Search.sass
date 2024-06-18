@@ -62,4 +62,26 @@
             padding: 1rem
             > svg
               color: $white
+            > span
+              display: none
+@media (min-width: 768px)
 
+  .search-container
+    padding: 9rem 4vw
+  .search-box
+    max-width: 90rem
+@media (min-width: 998px)
+  .search
+    &-container
+      .search-box
+        > div
+          .search-form
+            .search-icon
+              min-width: min-content
+              padding: 1rem 2rem
+              > svg
+                display: none
+              > span
+                display: inline-block
+                color: $white
+                font-weight: 700
