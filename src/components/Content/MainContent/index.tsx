@@ -4,6 +4,7 @@ import { RecoreInteractive } from '../RecoreInteractive'
 import { TemplateWall } from '../TemplateWall'
 import { Comments } from '../Comments'
 import { Search } from '../Search'
+import { Guide } from '../Guide'
 
 
 
@@ -17,6 +18,7 @@ export default function MainContent () {
         <CustomerSection />
         <Comments />
         <Search />
+        <Guide />
 
       </section>
   )
