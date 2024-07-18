@@ -1,6 +1,99 @@
 @use '../../../styles/variables' as *
 
 .guide
-  height: 100px
-  width: 500px
-  background-color: purple
+  width: 100%
+  margin: 6rem 0
+  &-container
+    height: auto
+    width: 100%
+    display: flex
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: auto 316px
+    background-image: url("https://img1.wsimg.com/cdnassets/transform/7fe37a33-51b8-48bd-87a1-221c3be13c9f/mrq-Guide-EMEA-Jamila-mobile")
+    .guide-image-text
+      position: relative
+      width: 50%
+      figcaption
+        position: absolute
+        display: block
+        padding: 4vw
+        text-align: start
+        left: 0
+        margin-top: 1rem
+        font-size: 1.8rem
+        font-weight: 700
+        line-height: 1.5
+        > span
+          font-weight: initial
+  &-content
+    width: 50%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    padding: 6rem
+    .guide-logo
+      display: block
+      padding-bottom: 6rem
+    .guide-card-container
+      max-width: 70.75rem
+      .guide-card
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        text-align: start
+        position: relative
+        &-title
+          max-width: 44.6rem
+          font-size: 4rem
+          line-height: 1.25
+          font-weight: 850
+          margin-bottom: 2rem
+        &-description
+          font-size: 2.25rem
+          line-height: 1.50
+          margin-bottom: 2rem
+        &-button
+          margin-bottom: 2rem
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          justify-content: flex-start
+          width: 100%
+          .button-get-help
+            > a
+            background-color: $black
+            padding: 1.5rem 6rem
+            border: solid 1.6px $black
+            color: $white
+            font-size: 2rem
+            border-radius: 0.5rem
+            display: inline-block
+            justify-content: center
+            align-items: center
+            white-space: nowrap
+            font-weight: 600
+
+@media (max-width: 767px)
+  .guide
+    &-container
+      flex-direction: column
+      .guide-image-text
+        height: 316px
+    &-content
+      width: 100%
+      padding: 4rem
+      .guide-logo
+        padding-bottom: 4rem
+        .guide-img-wrapper
+          img
+            height: 1.8rem
+            width: 13.5rem
+
+@media (min-width: 768px)
+  .guide
+    &-container
+      background-image: url('https://img1.wsimg.com/cdnassets/transform/6eb1d63d-9715-4115-a1dc-b261dadbe872/mrq-Guide-EMEA-Jamila-tablet')
+      background-size: cover
+      justify-content: space-between
+      min-height: 58vh
