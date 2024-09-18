@@ -5,7 +5,7 @@ import { TemplateWall } from '../TemplateWall'
 import { Comments } from '../Comments'
 import { Search } from '../Search'
 import { Guide } from '../Guide'
-
+import { Faq } from '../Faq'
 
 
 export default function MainContent () {
@@ -19,7 +19,7 @@ export default function MainContent () {
         <Comments />
         <Search />
         <Guide />
-
+        <Faq />
       </section>
   )
 }
