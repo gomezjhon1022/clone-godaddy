@@ -3,17 +3,138 @@
 .faq
   padding: 0 4vw
   width: 100%
-  height: 400px
-  background-color: pink
-
-.arrow-up
-  height: 15px
-
-.arrow-down
-  height: 15px
+  .faq-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    padding: 0 4vw
+    margin: 6rem 0
+    .faq-headline
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      .faq-description
+        margin-bottom: 2rem
+        max-width: 67.5rem
+        > h1
+          font-size: 3.9rem
+          font-weight: 500
+          margin-bottom: 2rem
+        > h2
+          font-size: 3.1rem
+          font-weight: 500
+    .faq-main
+      display: flex
+      flex-direction: column
+      width: 100%
+      margin: 2rem 0
+      padding: 3rem
+      > details
+        text-align: start
+        padding: 3rem 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        cursor: pointer
+        overflow: hidden
+        border-top: 1px solid lightgray
+        > summary
+          display: flex
+          justify-content: space-between
+          align-items: flex-start
+          width: 100%
+          font-weight: bold
+          > h3
+            font-size: 2.25rem
+            padding-right: 1rem
+            line-height: 1.9
+          > span
+            width: 3rem
+            height: 3rem
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: transform 100ms
+        .faq-answered
+          font-size: 2rem
+          line-height: 1.5
+          margin-top: 1rem
+          > span
+            > ul
+              padding-left: 4rem
+              margin-bottom: 2rem
+              > li
+                margin: 1.5rem 0
+                list-style: disc
+            > ol
+              padding-left: 4rem
+              margin-bottom: 2rem
+              > li
+                margin: 1.5rem 0
+                list-style: decimal
+            a
+              text-decoration: underline
+              color: $black
+            a:hover
+              color: $color-green-1
+              text-decoration: none
+      > details[open] span
+        transform: rotate(180deg)
 
 @media (min-width: 520px)
   .faq
     max-width: 480px
-    background-color: red
     margin: 0 auto
+
+@media (min-width: 768px)
+  .faq
+    max-width: 720px
+    .faq-container
+      .faq-main
+        width: 63.6rem
+
+@media (min-width: 992px)
+  .faq
+    max-width: 940px
+    .faq-container
+      margin: 4vw 0
+      .faq-headline
+        .faq-description
+          > h1
+            font-size: 4.1rem
+          > h2
+            font-size: 4rem
+
+@media (min-width: 1200px)
+  .faq
+    max-width: 1140px
+    .faq-container
+      .faq-headline
+        .faq-description
+          > h1
+            font-size: 5.2rem
+      .faq-main
+        width: 100rem
+        > details
+          > summary
+            > h3
+              font-size: 2.6rem
+          .faq-answered
+            width: 80%
+
+@media (min-width: 1720px)
+  .faq
+    max-width: 1640px
+    .faq-container
+      .faq-headline
+        .faq-description
+          > h1
+            font-size: 6.3rem
+      .faq-main
+        > details
+          > summary
+            > h3
+              font-size: 3.6rem

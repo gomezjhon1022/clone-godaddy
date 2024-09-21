@@ -1,10 +1,9 @@
 import './Faq.sass'
 import { ArrowDown } from './ArrowDown'
-import { ArrowUp } from './ArrowUp'
 
 function Faq () {
   return (
-   <section className='faq'>
+  <section className='faq'>
     <div className='faq-container'>
       <div className='faq-headline'>
         <div className='faq-description'>
@@ -22,17 +21,15 @@ function Faq () {
             <h3>How does GoDaddy help small business owners succeed?</h3>
             <span>
               <ArrowDown />
-              <ArrowUp />
             </span>
           </summary>
           <div className='faq-answered'>GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional email helps you build a professional image, while our online marketing tools empower entrepreneurs to get online with an SEO-friendly website. GoDaddy is an all-in-one solution provider to get your idea online, backed with expert, personalized support from GoDaddy Guides.</div>
         </details>
         <details>
           <summary>
-            <h3>Why do I need a webside for my business</h3>
+            <h3>Why do I need a webside for my business?</h3>
             <span>
               <ArrowDown />
-              <ArrowUp />
             </span>
           </summary>
           <div className='faq-answered'>
@@ -54,7 +51,6 @@ function Faq () {
             <h3>Why do I need a professional email?</h3>
             <span>
               <ArrowDown />
-              <ArrowUp />
             </span>
           </summary>
           <div className='faq-answered'>
@@ -62,7 +58,7 @@ function Faq () {
               There are a lot of reasons to switch from your free email to a domain-based email, but here are the top 3:
               <ol>
                   <li>Customers are much more likely to trust a professional address like lily@lilysbikes.com than lilysbikestexas84@notmail.com.</li>
-                  <li><a href="https://www.godaddy.com/en-uk/email/professional-business-email">Professional Email</a>&nbsp;provides world-class security with industry-leading spam and virus filters.</li>
+                  <li><a href="/">Professional Email</a>&nbsp;provides world-class security with industry-leading spam and virus filters.</li>
                   <li>Personalized email addresses promote your business more effectively. Every time you send an email, you are giving your web address to customers and prospects, encouraging them to visit your website.</li>
               </ol>
             </span>
@@ -73,12 +69,11 @@ function Faq () {
             <h3>Why get a domain name from GoDaddy?</h3>
             <span>
               <ArrowDown />
-              <ArrowUp />
             </span>
           </summary>
           <div className='faq-answered'>
             <span>
-            GoDaddy&nbsp;is the world's largest and trusted domain registrar that empowers people like you with creative ideas to succeed online. <a href="https://www.godaddy.com/en-uk/domains" >Buying a domain name</a> is easy with our domain search tool and domain name generator tools you can find the perfect website address for your business.
+            GoDaddy&nbsp;is the world's largest and trusted domain registrar that empowers people like you with creative ideas to succeed online. <a href="/" >Buying a domain name</a> is easy with our domain search tool and domain name generator tools you can find the perfect website address for your business.
             </span>
             </div>
         </details>
@@ -87,12 +82,11 @@ function Faq () {
             <h3>Why use GoDaddy Website Builder?</h3>
             <span>
               <ArrowDown />
-              <ArrowUp />
             </span>
           </summary>
           <div className='faq-answered'>
             <span>
-            Because it's a fast, simple way to create a website that you — and your customers — will love. Simply type in your idea or industry and&nbsp;GoDaddy&nbsp;<a href="https://www.godaddy.com/en-uk/websites/website-builder" data-track-name="website-builder_link" data-track-eid-click="" data-tracked="">Website Builder</a> will pull up a number of professionally designed, ready-to-launch templates. From there, just add your own text and images and you're good to go. And with dozens of features, from online appointment scheduling to a full-blown ecommerce system, Website Builder can handle your business' needs today and as you grow.
+            Because it's a fast, simple way to create a website that you — and your customers — will love. Simply type in your idea or industry and&nbsp;GoDaddy&nbsp;<a href="/" >Website Builder</a> will pull up a number of professionally designed, ready-to-launch templates. From there, just add your own text and images and you're good to go. And with dozens of features, from online appointment scheduling to a full-blown ecommerce system, Website Builder can handle your business' needs today and as you grow.
             </span>
           </div>
         </details>
@@ -101,12 +95,11 @@ function Faq () {
             <h3>What makes GoDaddy Web Hosting the world leader?</h3>
             <span>
               <ArrowDown />
-              <ArrowUp />
             </span>
           </summary>
           <div className='faq-answered'>
             <span>
-            With nearly 20 years in the industry, we have the experience, the technology and the hosting experts to help web designers, developers, bloggers and online businesses create and maintain their online presence. Our secure <a href="https://www.godaddy.com/en-uk/hosting/web-hosting" >web hosting platform</a>, complete with cPanel, offers a 99.9%&nbsp;uptime guarantee<sup>***</sup> and award-winning support, which has helped nearly 20+ million&nbsp;customers get online.
+            With nearly 20 years in the industry, we have the experience, the technology and the hosting experts to help web designers, developers, bloggers and online businesses create and maintain their online presence. Our secure <a href="/" >web hosting platform</a>, complete with cPanel, offers a 99.9%&nbsp;uptime guarantee<sup>***</sup> and award-winning support, which has helped nearly 20+ million&nbsp;customers get online.
             </span>
           </div>
         </details>
@@ -115,12 +108,11 @@ function Faq () {
             <h3>Why choose GoDaddy for WordPress?</h3>
             <span>
               <ArrowDown />
-              <ArrowUp />
             </span>
           </summary>
           <div className='faq-answered'>
             <span>
-            GoDaddy offers reliable and affordable <a href="https://www.godaddy.com/en-uk/hosting/wordpress-hosting" >WordPress hosting</a>&nbsp;and <a href="https://www.godaddy.com/en-uk/hosting/ecommerce-hosting">WooCommerce hosting</a>&nbsp;plans, one-click installs and the latest version so you have the most recent features available for your site. Your website content is managed from one place; you have a wealth of themes and add-ons giving you limitless options to succeed.
+            GoDaddy offers reliable and affordable <a href="/" >WordPress hosting</a>&nbsp;and <a href="/">WooCommerce hosting</a>&nbsp;plans, one-click installs and the latest version so you have the most recent features available for your site. Your website content is managed from one place; you have a wealth of themes and add-ons giving you limitless options to succeed.
             </span>
           </div>
         </details>
@@ -129,7 +121,6 @@ function Faq () {
             <h3>Why should I transfer my domain, website or web hosting to GoDaddy?</h3>
             <span>
               <ArrowDown />
-              <ArrowUp />
             </span>
           </summary>
           <div className='faq-answered'>
@@ -143,12 +134,11 @@ function Faq () {
             <h3>Why use the GoDaddy Logo Maker?</h3>
             <span>
               <ArrowDown />
-              <ArrowUp />
             </span>
           </summary>
           <div className='faq-answered'>
             <span>
-            With the <a href="https://www.godaddy.com/en-uk/logo-maker">GoDaddy Logo Maker</a> it's easy to make a custom logo that'll help define your brand's personality and transform your business. From logomarks to logotypes, there are hundreds of templates to choose from. Or you can design your own in just minutes. No design skills needed.
+            With the <a href="/">GoDaddy Logo Maker</a> it's easy to make a custom logo that'll help define your brand's personality and transform your business. From logomarks to logotypes, there are hundreds of templates to choose from. Or you can design your own in just minutes. No design skills needed.
             </span>
           </div>
         </details>
