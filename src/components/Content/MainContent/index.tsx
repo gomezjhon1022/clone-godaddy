@@ -6,7 +6,7 @@ import { Comments } from '../Comments'
 import { Search } from '../Search'
 import { Guide } from '../Guide'
 import { Faq } from '../Faq'
-
+import { Legal } from '../Legal'
 
 export default function MainContent () {
 
@@ -20,6 +20,7 @@ export default function MainContent () {
         <Search />
         <Guide />
         <Faq />
+        <Legal />
       </section>
   )
 }
