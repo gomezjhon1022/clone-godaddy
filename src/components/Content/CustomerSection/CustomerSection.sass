@@ -111,6 +111,7 @@
                 flex-direction: row
                 font-weight: 600
                 margin-bottom: 0
+                cursor: pointer
                 .highlight-primary
                   display: flex
                   align-items: center
@@ -130,6 +131,9 @@
                     > span
                       display: block
                       white-space: nowrap
+              > li:hover .card-link
+                color: $color-green-1
+                text-decoration: underline
         .card-image
           display: flex
           width: auto
